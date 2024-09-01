@@ -1,0 +1,9 @@
+tk
+opencv-python
+Pillow
+tensorflow==2.16.1
+numpy
+keras==3.0
+scikit-image
+scikit-learn
+joblib
