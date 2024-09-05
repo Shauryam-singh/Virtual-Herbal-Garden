@@ -7,7 +7,7 @@ from skimage.feature import hog
 from skimage import color
 
 # Load the model (update the path if necessary)
-model = joblib.load('models/plant_recognition_best_model.pkl')
+model = joblib.load('models\plant_recognition_rf_model_updated.pkl')
 
 # Load plant information
 with open('data/plant_info.json', 'r') as f:
