@@ -94,7 +94,7 @@ def train_and_predict_model():
     joblib.dump(rf_model, 'models/plant_recognition_rf_model.pkl')
     
     # Test prediction and allow user correction
-    test_image = r'images.jpeg'  # Replace with actual test image path
+    test_image = r'data/plant_images/rose.jpg'  # Replace with actual test image path
     predicted_label = rf_model.predict([extract_features(test_image)])[0]
     
     # Allow user to correct the prediction

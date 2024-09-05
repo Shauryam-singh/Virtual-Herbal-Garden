@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Herbal Garden</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Virtual Herbal Garden</h1>
+        <input type="text" id="search" placeholder="Search for a plant">
+        <button onclick="searchPlant()">Search</button>
+        <button onclick="uploadImage()">Upload Image</button>
+        <button onclick="clearResults()">Clear</button>
+        <button onclick="startQuiz()">Take Quiz</button>
+        
+        <div id="result"></div>
+        <div id="image"></div>
+
+        <div id="quiz" style="display:none;">
+            <p id="quiz-question"></p>
+            <form id="quiz-options"></form>
+            <button onclick="submitQuiz()">Submit</button>
+        </div>
+
+        <div id="status-bar">Ready</div>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

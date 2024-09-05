@@ -5,3 +5,4 @@ numpy
 scikit-image
 scikit-learn
 joblib
+flask
