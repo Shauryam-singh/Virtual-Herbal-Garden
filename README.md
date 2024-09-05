@@ -39,7 +39,7 @@ The **Virtual Herbal Garden** is an interactive, educational, and immersive appl
 
 1. **Run the Application:**
     ```bash
-    python app.py
+    python main.py
     ```
 
 2. **Navigate the Application:**
