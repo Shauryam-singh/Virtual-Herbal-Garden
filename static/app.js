@@ -40,6 +40,7 @@ function startQuiz() {
             });
             document.getElementById('quiz-options').innerHTML = optionsHTML;
             document.getElementById('quiz').style.display = 'block';
+            updateProgressBar(0);  // Start the progress bar at 0
         });
 }
 
@@ -53,5 +54,11 @@ function submitQuiz() {
         .then(response => response.json())
         .then(data => {
             alert(`Score: ${data.score}`);
+            document.getElementById('quiz').style.display = 'none';
         });
+}
+
+function updateProgressBar(progress) {
+    let progressBar = document.getElementById('progress');
+    progressBar.style.width = `${progress}%`;
 }
