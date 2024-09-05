@@ -1,82 +1,122 @@
 {
   "rose": {
-    "info": "Used for skin care and in cosmetics.",
-    "image": "rose.jpg"
+    "info": "Used for skin care and in cosmetics. The petals have anti-inflammatory properties and are often used in face masks and lotions.",
+    "scientific_name": "Rosa damascena",
+    "image": "rose.jpg",
+    "habitat": "Cultivated worldwide, especially in temperate regions. Thrives in well-drained soil and sunny locations."
   },
   "tulsi": {
-    "info": "Used in Ayurveda for its medicinal properties.",
-    "image": "tulsi.jpg"
+    "info": "Used in Ayurveda for its medicinal properties. It is believed to enhance immunity and relieve stress.",
+    "scientific_name": "Ocimum tenuiflorum",
+    "image": "tulsi.jpg",
+    "habitat": "Native to the Indian subcontinent, grows in tropical and subtropical climates. Prefers sunny locations and well-drained soil."
   },
   "aloevera": {
-    "info": "Known for its soothing and healing properties.",
-    "image": "aloevera.jpg"
+    "info": "Known for its soothing and healing properties. Often used to treat burns, cuts, and other skin issues.",
+    "scientific_name": "Aloe vera",
+    "image": "aloevera.jpg",
+    "habitat": "Native to the Arabian Peninsula, but cultivated worldwide. Thrives in arid and semi-arid regions with well-drained soil."
   },
   "lavender": {
-    "info": "Used in aromatherapy for relaxation and sleep improvement.",
-    "image": "lavender.jpg"
+    "info": "Used in aromatherapy for relaxation and sleep improvement. The scent is known for its calming effects.",
+    "scientific_name": "Lavandula angustifolia",
+    "image": "lavender.jpg",
+    "habitat": "Native to the Mediterranean region. Grows well in dry, sandy, or gravelly soils and prefers full sun."
   },
   "mint": {
-    "info": "Commonly used to aid digestion and relieve headaches.",
-    "image": "mint.jpg"
+    "info": "Commonly used to aid digestion and relieve headaches. Mint leaves can be used in teas and culinary dishes.",
+    "scientific_name": "Mentha",
+    "image": "mint.jpg",
+    "habitat": "Widely distributed in temperate regions. Prefers moist, fertile soil and partial shade but can tolerate full sun."
   },
   "chamomile": {
-    "info": "Used to promote relaxation and help with sleep.",
-    "image": "chamomile.jpg"
+    "info": "Used to promote relaxation and help with sleep. Chamomile tea is a popular remedy for insomnia and anxiety.",
+    "scientific_name": "Matricaria chamomilla",
+    "image": "chamomile.jpg",
+    "habitat": "Native to Europe and Western Asia. Grows in well-drained soil with full sun exposure."
   },
   "dandelion": {
-    "info": "Used as a diuretic and to aid digestion.",
-    "image": "dandelion.jpg"
+    "info": "Used as a diuretic and to aid digestion. The leaves, roots, and flowers are used in various herbal remedies.",
+    "scientific_name": "Taraxacum officinale",
+    "image": "dandelion.jpg",
+    "habitat": "Native to Eurasia and North America. Thrives in a variety of soil types and can grow in both sunny and shaded areas."
   },
   "ginger": {
-    "info": "Known for its anti-nausea and anti-inflammatory properties.",
-    "image": "ginger.jpg"
+    "info": "Known for its anti-nausea and anti-inflammatory properties. It is commonly used in cooking and as a remedy for nausea.",
+    "scientific_name": "Zingiber officinale",
+    "image": "ginger.jpg",
+    "habitat": "Native to Southeast Asia. Grows well in tropical and subtropical climates with rich, well-drained soil and partial shade."
   },
   "turmeric": {
-    "info": "Contains curcumin, which has anti-inflammatory and antioxidant effects.",
-    "image": "turmeric.jpg"
+    "info": "Contains curcumin, which has anti-inflammatory and antioxidant effects. Often used in cooking and for its health benefits.",
+    "scientific_name": "Curcuma longa",
+    "image": "turmeric.jpg",
+    "habitat": "Native to tropical South Asia. Prefers warm, humid climates with well-drained, fertile soil."
   },
   "basil": {
-    "info": "Used in cooking and has antibacterial properties.",
-    "image": "basil.jpg"
+    "info": "Used in cooking and has antibacterial properties. Basil is also known for its potential anti-inflammatory effects.",
+    "scientific_name": "Ocimum basilicum",
+    "image": "basil.jpg",
+    "habitat": "Native to tropical regions of central Africa and Southeast Asia. Thrives in warm, sunny locations with well-drained soil."
   },
   "parsley": {
-    "info": "Rich in vitamins and used for its diuretic properties.",
-    "image": "parsley.jpg"
+    "info": "Rich in vitamins and used for its diuretic properties. Parsley is also a common garnish and has various health benefits.",
+    "scientific_name": "Petroselinum crispum",
+    "image": "parsley.jpg",
+    "habitat": "Native to the Mediterranean region. Grows well in fertile, well-drained soil with partial shade."
   },
   "thyme": {
-    "info": "Has antimicrobial properties and is used in cooking and medicine.",
-    "image": "thyme.jpg"
+    "info": "Has antimicrobial properties and is used in cooking and medicine. Thyme is also used in traditional remedies for respiratory conditions.",
+    "scientific_name": "Thymus vulgaris",
+    "image": "thyme.jpg",
+    "habitat": "Native to the Mediterranean region. Prefers dry, well-drained soil and full sun exposure."
   },
   "rosemary": {
-    "info": "Used to improve memory and concentration, and for its antioxidant properties.",
-    "image": "rosemary.jpg"
+    "info": "Used to improve memory and concentration, and for its antioxidant properties. Rosemary is commonly used in culinary dishes.",
+    "scientific_name": "Rosmarinus officinalis",
+    "image": "rosemary.jpg",
+    "habitat": "Native to the Mediterranean region. Thrives in well-drained soil and full sun."
   },
   "sage": {
-    "info": "Known for its digestive benefits and antimicrobial properties.",
-    "image": "sage.jpg"
+    "info": "Known for its digestive benefits and antimicrobial properties. Sage is often used in cooking and herbal medicine.",
+    "scientific_name": "Salvia officinalis",
+    "image": "sage.jpg",
+    "habitat": "Native to the Mediterranean region. Grows well in dry, sandy soil and full sun."
   },
   "oregano": {
-    "info": "Contains antioxidants and is used for its anti-inflammatory effects.",
-    "image": "oregano.jpg"
+    "info": "Contains antioxidants and is used for its anti-inflammatory effects. Oregano is commonly used in Italian cuisine and traditional medicine.",
+    "scientific_name": "Origanum vulgare",
+    "image": "oregano.jpg",
+    "habitat": "Native to Europe, the Mediterranean region, and Western Asia. Prefers dry, well-drained soil and full sun."
   },
   "coriander": {
-    "info": "Used for its antioxidant and digestive benefits.",
-    "image": "coriander.jpg"
+    "info": "Used for its antioxidant and digestive benefits. Coriander seeds are used as a spice, and the leaves are used in salads and dishes.",
+    "scientific_name": "Coriandrum sativum",
+    "image": "coriander.jpg",
+    "habitat": "Native to regions spanning from Southern Europe and Northern Africa to Western Asia. Thrives in well-drained soil with full sun."
   },
   "fennel": {
-    "info": "Known for its digestive benefits and ability to reduce bloating.",
-    "image": "fennel.jpg"
+    "info": "Known for its digestive benefits and ability to reduce bloating. Fennel seeds are used in cooking and traditional remedies.",
+    "scientific_name": "Foeniculum vulgare",
+    "image": "fennel.jpg",
+    "habitat": "Native to the Mediterranean region. Grows well in well-drained soil and full sun."
   },
   "jasmine": {
-    "info": "Used in aromatherapy for its calming effects and to reduce stress.",
-    "image": "jasmine.jpg"
+    "info": "Used in aromatherapy for its calming effects and to reduce stress. Jasmine flowers are also used in perfumes and teas.",
+    "scientific_name": "Jasminum",
+    "image": "jasmine.jpg",
+    "habitat": "Native to tropical and subtropical regions. Prefers well-drained soil and full sun to partial shade."
   },
   "hibiscus": {
-    "info": "Rich in antioxidants and used to lower blood pressure.",
-    "image": "hibiscus.jpg"
+    "info": "Rich in antioxidants and used to lower blood pressure. Hibiscus tea is a popular beverage known for its tart flavor.",
+    "scientific_name": "Hibiscus sabdariffa",
+    "image": "hibiscus.jpg",
+    "habitat": "Native to tropical and subtropical regions. Thrives in warm climates with well-drained soil."
   },
   "echinacea": {
-    "info": "Boosts the immune system and is used to prevent colds.",
-    "image": "echinacea.jpg"
+    "info": "Boosts the immune system and is used to prevent colds. Echinacea is often used in herbal supplements and teas.",
+    "scientific_name": "Echinacea purpurea",
+    "image": "echinacea.jpg",
+    "habitat": "Native to North America. Prefers well-drained soil and full sun."
   }
 }

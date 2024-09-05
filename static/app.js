@@ -19,7 +19,16 @@ function searchPlant() {
         });
 }
 
-// Function to handle image upload and classification
+function displayPlantInfo(data) {
+    document.getElementById('result').innerHTML = `
+        <strong>Plant:</strong> ${data.plant_name}<br>
+        <strong>Information:</strong> ${data.info}<br>
+        <strong>Scientific Name:</strong> ${data.scientific_name}<br>
+        <strong>Habitat:</strong> ${data.habitat}<br>
+        <img src="${data.image_url}" alt="Plant Image" style="max-width: 200px; max-height: 200px;">
+    `;
+}
+
 function uploadImage() {
     let formData = new FormData();
     let input = document.createElement('input');
@@ -37,8 +46,7 @@ function uploadImage() {
         fetch('/upload', { method: 'POST', body: formData })
             .then(response => response.json())
             .then(data => {
-                document.getElementById('result').innerHTML = `Plant: ${data.plant_name}<br>Information: ${data.info}`;
-                document.getElementById('image').innerHTML = `<img src="${data.image_url}" alt="Plant Image" style="max-width: 200px; max-height: 200px;">`;
+                displayPlantInfo(data);
                 document.getElementById('status-bar').innerText = 'Image classification complete.';
             })
             .catch(error => {
