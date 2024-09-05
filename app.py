@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify, url_for
+from flask import Flask, render_template, request, jsonify, url_for, send_from_directory
 from scripts.classify_plant import classify_plant
 import json
 import random
@@ -26,12 +26,23 @@ generate_questions(plant_info)
 def index():
     return render_template('template.html')
 
+@app.route('/plant_images/<filename>')
+def serve_image(filename):
+    return send_from_directory('data/plant_images', filename)
+
 @app.route('/search')
 def search():
     query = request.args.get('q', '').lower()
-    results = {plant: info for plant, info in plant_info.items() if query in plant.lower() or query in info.lower()}
+    results = {plant: info for plant, info in plant_info.items() if query in plant.lower() or query in info['info'].lower()}
+    
     if results:
-        return jsonify(result="<br>".join([f"{plant.title()}: {info}" for plant, info in results.items()]))
+        result_html = ""
+        for plant, data in results.items():
+            plant_title = plant.title()
+            plant_info_text = data['info']
+            image_url = url_for('serve_image', filename=data['image'])
+            result_html += f'<div><strong>{plant_title}</strong>: {plant_info_text}<br><img src="{image_url}" alt="{plant_title}" style="max-width: 150px; max-height: 150px;"></div><br>'
+        return jsonify(result=result_html)
     else:
         return jsonify(result="No results found.")
 

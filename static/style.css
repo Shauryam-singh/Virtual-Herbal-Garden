@@ -1,21 +1,42 @@
 /* General Styling */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    color: #333;
-    text-align: center;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
+/* Background Image Layer */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://static.vecteezy.com/system/resources/previews/040/890/255/non_2x/ai-generated-empty-wooden-table-on-the-natural-background-for-product-display-free-photo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+/* Container Styling */
 .container {
     max-width: 900px;
     margin: 5% auto;
     padding: 40px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
     border-radius: 12px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+}
+
+img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: 2px solid #4CAF50;
 }
 
 /* Input & Button Styling */
@@ -27,6 +48,7 @@ input[type="text"] {
     border: 2px solid #4CAF50;
     border-radius: 6px;
     outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 button {
@@ -38,6 +60,7 @@ button {
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
 }
 
 button:hover {
@@ -58,6 +81,7 @@ button:hover {
 #quiz-question {
     font-size: 20px;
     margin-bottom: 15px;
+    color: #333;
 }
 
 #quiz-options input {
