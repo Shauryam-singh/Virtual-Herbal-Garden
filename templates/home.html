@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Assessment - Landing Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Healthify</h1>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faq">FAQs</a></li>
+                <li><a href="#cta" class="cta-button">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero">
+        <div class="container">
+            <h1>Welcome to Healthify</h1>
+            <p>Discover personalized health solutions powered by nature and technology.</p>
+            <a href="get_plant_info"><button class="cta-button">Explore Now</button></a>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Our Features</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <i class="fa-solid fa-leaf"></i>
+                    <h3>Medicinal Plant Guide</h3>
+                    <p>Explore a wide variety of plants used in traditional and modern medicine.</p>
+                </div>
+                <div class="feature">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <h3>Health Assessment</h3>
+                    <p>Take a quick quiz to find the best plants for your health needs.</p>
+                </div>
+                <div class="feature">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>Progress Tracking</h3>
+                    <p>Track your health journey and see the benefits of natural remedies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p>"This tool completely changed the way I approach my health. Highly recommended!"</p>
+                    <h3>- Sarah Johnson</h3>
+                </div>
+                <div class="testimonial">
+                    <p>"The health assessment was so accurate, and I loved learning about natural remedies."</p>
+                    <h3>- Michael Lee</h3>
+                </div>
+                <div class="testimonial">
+                    <p>"Simple, intuitive, and effective. A must-have for anyone exploring natural health."</p>
+                    <h3>- Emma Davis</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>What is Healthify?</h3>
+                <p>Healthify is a personalized guide to medicinal plants and natural remedies.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is this tool free to use?</h3>
+                <p>Yes, all our basic features are completely free.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section id="cta" class="cta">
+        <div class="container">
+            <h2>Start Your Health Journey Today!</h2>
+            <p>Let nature help you achieve better health. Click the button below to explore.</p>
+            <a href="get_plant_info"><button class="cta-button">Learn More</button></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Healthify. All Rights Reserved.</p>
+        <ul class="social-links">
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+    </footer>
+</body>
+</html>

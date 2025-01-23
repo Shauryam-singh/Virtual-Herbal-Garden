@@ -24,6 +24,10 @@ generate_questions(plant_info)
 
 @app.route('/')
 def index():
+    return render_template('home.html')
+
+@app.route('/get_plant_info')
+def get_plant_info():
     return render_template('template.html')
 
 @app.route('/plant_images/<filename>')
