@@ -1,0 +1,10 @@
+{
+    "Common Cold": {
+        "symptoms": ["runny nose", "sneezing", "sore throat"],
+        "treatment": "Ginger tea, Tulsi leaves, warm water gargle"
+    },
+    "Headache": {
+        "symptoms": ["pain in head", "stress", "tension"],
+        "treatment": "Shavasana yoga, Lavender oil massage, proper hydration"
+    }
+}

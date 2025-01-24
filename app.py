@@ -10,6 +10,10 @@ app = Flask(__name__)
 with open('data/plant_info.json', 'r') as f:
     plant_info = json.load(f)
 
+# Load disease and treatment data
+with open('data/diseases.json', 'r') as f:
+    disease_data = json.load(f)
+
 # Store quiz questions
 quiz_questions = []
 def generate_questions(plant_info):
@@ -28,7 +32,7 @@ def index():
 
 @app.route('/get_plant_info')
 def get_plant_info():
-    return render_template('template.html')
+    return render_template('gardern.html')
 
 @app.route('/plant_images/<filename>')
 def serve_image(filename):
@@ -101,6 +105,24 @@ def quiz_submit():
     correct = question['options'][selected] == question['answer']
     score = 1 if correct else 0
     return jsonify(score=score)
+
+@app.route('/disease_treatment', methods=['GET', 'POST'])
+def disease_treatment():
+    if request.method == 'POST':
+        user_input = request.json.get('input', '').lower()
+        results = []
+        for disease, details in disease_data.items():
+            if user_input in disease.lower() or any(user_input in symptom.lower() for symptom in details['symptoms']):
+                results.append({
+                    'disease': disease,
+                    'symptoms': ', '.join(details['symptoms']),
+                    'treatment': details['treatment']
+                })
+        if results:
+            return jsonify(results=results)
+        else:
+            return jsonify(message="No matching treatments found.")
+    return render_template('disease_treatment.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

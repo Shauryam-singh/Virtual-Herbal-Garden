@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthify - Garden</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='gardern.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIKKF9jCUyfe_NLbh7-fbLa52loekfByXfsg&s">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/"><h1 class="logo">Healthify</h1></a>
+            <ul class="nav-links">
+                <li><a href="/#hero">Home</a></li>
+                <li><a href="/#features">Features</a></li>
+                <li><a href="/#testimonials">Testimonials</a></li>
+                <li><a href="/#faq">FAQs</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <h1>🌿 Virtual Herbal Garden</h1>
+        
+        <div class="search-section">
+            <input type="text" id="search" placeholder="Search for a plant">
+            <button onclick="searchPlant()">Search</button>
+        </div>
+
+        <div class="action-buttons">
+            <button onclick="uploadImage()">Upload Image</button>
+            <button onclick="clearResults()">Clear</button>
+            <button onclick="startQuiz()">Take Quiz</button>
+            <a href="disease_treatment"><button>Disease & Treatment</button></a>
+        </div>
+        
+        <div id="result" class="card-grid"></div>
+        <div id="image" class="card-grid"></div>
+
+        <div id="quiz">
+            <div id="progress-bar">
+                <div id="progress"></div>
+            </div>
+            <p id="quiz-question"></p>
+            <form id="quiz-options"></form>
+            <button onclick="submitQuiz()">Submit</button>
+        </div>
+
+        <div id="status-bar">Ready</div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>About Healthify</h3>
+                    <p>Healthify is your trusted partner for natural remedies and personalized health recommendations.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#faq">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>&copy; 2025 Healthify. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
