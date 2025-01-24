@@ -64,25 +64,29 @@
     </footer>
 
     <script>
-        document.getElementById('diseaseForm').addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const input = document.getElementById('userInput').value;
-            const response = await fetch('/disease_treatment', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ input })
-            });
-            const data = await response.json();
-            const resultsDiv = document.getElementById('results');
-            resultsDiv.innerHTML = '';
-            if (data.results) {
-                data.results.forEach(item => {
-                    resultsDiv.innerHTML += `<div><strong>Disease:</strong> ${item.disease}<br><strong>Symptoms:</strong> ${item.symptoms}<br><strong>Treatment:</strong> ${item.treatment}</div><br>`;
-                });
-            } else {
-                resultsDiv.innerHTML = `<p>${data.message}</p>`;
-            }
+    document.getElementById('diseaseForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const input = document.getElementById('userInput').value;
+        const response = await fetch('/disease_treatment', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ input })
         });
+        const data = await response.json();
+        const resultsDiv = document.getElementById('results');
+        resultsDiv.innerHTML = '';
+        if (data.results) {
+            data.results.forEach(item => {
+                resultsDiv.innerHTML += `<div>
+                                            <strong>Disease:</strong> ${item.disease}<br>
+                                            <strong>Symptoms:</strong> ${item.symptoms}<br>
+                                            <strong>Treatment:</strong> ${item.treatment}<br>
+                                          </div><br>`;
+            });
+        } else {
+            resultsDiv.innerHTML = `<p>${data.message}</p>`;
+        }
+    });
     </script>
 </body>
 </html>

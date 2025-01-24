@@ -1,10 +1,62 @@
 {
     "Common Cold": {
-        "symptoms": ["runny nose", "sneezing", "sore throat"],
-        "treatment": "Ginger tea, Tulsi leaves, warm water gargle"
+        "symptoms": ["runny nose", "sneezing", "sore throat", "mild fever", "nasal congestion"],
+        "treatment": "Ginger tea, Tulsi leaves, warm water gargle, steam inhalation with eucalyptus oil"
     },
     "Headache": {
-        "symptoms": ["pain in head", "stress", "tension"],
-        "treatment": "Shavasana yoga, Lavender oil massage, proper hydration"
+        "symptoms": ["pain in head", "stress", "tension", "migraine", "eye strain"],
+        "treatment": "Shavasana yoga, Lavender oil massage, proper hydration, peppermint oil application"
+    },
+    "Cough": {
+        "symptoms": ["dry cough", "wet cough", "irritation in throat"],
+        "treatment": "Honey with warm water, Mulethi (licorice root) tea, steam inhalation with camphor"
+    },
+    "Fever": {
+        "symptoms": ["high temperature", "chills", "body ache"],
+        "treatment": "Giloy juice, coriander seed tea, rest with warm fluids"
+    },
+    "Acidity": {
+        "symptoms": ["burning sensation in chest", "stomach pain", "bloating"],
+        "treatment": "Cold milk, buttermilk with cumin, banana, Triphala powder"
+    },
+    "Constipation": {
+        "symptoms": ["irregular bowel movements", "bloating", "difficulty passing stools"],
+        "treatment": "Isabgol (psyllium husk), triphala powder, warm water with lemon and honey"
+    },
+    "Insomnia": {
+        "symptoms": ["difficulty sleeping", "restlessness", "fatigue"],
+        "treatment": "Ashwagandha powder, Brahmi tea, meditation, chamomile tea"
+    },
+    "Skin Rash": {
+        "symptoms": ["redness", "itching", "inflammation"],
+        "treatment": "Aloe vera gel, neem paste, sandalwood powder with rose water"
+    },
+    "Arthritis": {
+        "symptoms": ["joint pain", "swelling", "stiffness"],
+        "treatment": "Turmeric milk, Ashwagandha powder, gentle yoga, castor oil massage"
+    },
+    "Diabetes": {
+        "symptoms": ["frequent urination", "increased thirst", "fatigue"],
+        "treatment": "Bitter gourd juice, fenugreek seeds, cinnamon tea, regular walking"
+    },
+    "Hypertension": {
+        "symptoms": ["high blood pressure", "dizziness", "shortness of breath"],
+        "treatment": "Garlic, hibiscus tea, deep breathing exercises, Ashwagandha powder"
+    },
+    "Back Pain": {
+        "symptoms": ["pain in lower back", "stiffness", "limited mobility"],
+        "treatment": "Yoga poses like Bhujangasana, hot compress, sesame oil massage"
+    },
+    "Depression": {
+        "symptoms": ["low mood", "loss of interest", "fatigue", "difficulty concentrating"],
+        "treatment": "Ashwagandha, meditation, Brahmi tea, sun exposure"
+    },
+    "Allergies": {
+        "symptoms": ["sneezing", "itchy eyes", "skin irritation", "nasal congestion"],
+        "treatment": "Neem tablets, Tulsi tea, honey with warm water"
+    },
+    "Indigestion": {
+        "symptoms": ["stomach discomfort", "bloating", "nausea"],
+        "treatment": "Ajwain (carom seeds) with warm water, ginger tea, buttermilk with black salt"
     }
 }

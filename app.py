@@ -113,11 +113,14 @@ def disease_treatment():
         results = []
         for disease, details in disease_data.items():
             if user_input in disease.lower() or any(user_input in symptom.lower() for symptom in details['symptoms']):
+                # Assume plant_name is stored in disease_data as the plant that can cure the disease
+                plant_name = details.get('plant', None)
                 results.append({
                     'disease': disease,
                     'symptoms': ', '.join(details['symptoms']),
-                    'treatment': details['treatment']
+                    'treatment': details['treatment'],
                 })
+        
         if results:
             return jsonify(results=results)
         else:
