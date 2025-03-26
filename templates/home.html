@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIKKF9jCUyfe_NLbh7-fbLa52loekfByXfsg&s">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -25,7 +26,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <header id="hero" class="hero">
+    <header id="hero" class="hero" data-aos="fade-up">
         <div class="container">
             <h1>Welcome to Healthify</h1>
             <p>Discover personalized health solutions powered by nature and technology.</p>
@@ -34,7 +35,7 @@
     </header>
 
     <!-- Features Section -->
-    <section id="features" class="features">
+    <section id="features" class="features" data-aos="fade-up">
         <div class="container">
             <h2>Our Features</h2>
             <div class="feature-grid">
@@ -58,7 +59,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
+    <section id="testimonials" class="testimonials" data-aos="fade-up">
         <div class="container">
             <h2>What Our Users Say</h2>
             <div class="testimonial-grid">
@@ -82,7 +83,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section id="faq" class="faq">
+    <section id="faq" class="faq" data-aos="fade-up">
         <div class="container">
             <h2>Frequently Asked Questions</h2>
             <div class="faq-item">
@@ -101,7 +102,7 @@
     </section>
 
     <!-- Call-to-Action Section -->
-    <section id="cta" class="cta">
+    <section id="cta" class="cta" data-aos="fade-up">
         <div class="container">
             <div class="cta-content">
                 <div class="cta-text">
@@ -117,7 +118,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
@@ -145,6 +146,13 @@
             <p>&copy; 2025 Healthify. All Rights Reserved.</p>
         </div>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Duration of animation (1 second)
+            once: true // Animate only once
+        });
+    </script>
+    
 </body>
 </html>
