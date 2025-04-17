@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* General Reset */
 * {
     margin: 0;
@@ -254,4 +255,262 @@ button:active {
     margin-top: 20px;
     font-size: 0.9rem;
     color: #94a3b8;
+=======
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    line-height: 1.6;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/* Navbar */
+.navbar {
+    width: 100%;
+    background: #1e293b;
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+.navbar .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    color: #4caf50;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    float: right;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #4caf50;
+}
+
+/* Container Styling */
+.main-container {
+    display: flex;
+    min-height: 90vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.main-container h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+    margin: 20px;
+}
+
+/* Search Section */
+.search-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: 2px solid #4CAF50;
+}
+
+/* Input & Button Styling */
+input[type="text"] {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+#result, #image {
+    margin-top: 20px;
+}
+
+/* Quiz Styles */
+#quiz {
+    margin-top: 30px;
+    display: none;
+}
+
+#quiz-question {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#quiz-options input {
+    margin-right: 10px;
+}
+
+/* Progress Bar for Quiz */
+#progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    height: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+#progress {
+    height: 100%;
+    width: 0;
+    background-color: #4CAF50;
+    border-radius: 6px;
+}
+
+/* Status Bar */
+#status-bar {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: #888;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    input[type="text"], button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: #1e293b;
+    color: #cbd5e1;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.footer-about, .footer-links, .footer-social {
+    max-width: 300px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #4caf50;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-social ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.footer-social ul li a {
+    color: #4caf50;
+    font-size: 1.5rem;
+}
+
+.footer p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #94a3b8;
+>>>>>>> 5f84a470073da088c72188a484715ab715f31484
 }
