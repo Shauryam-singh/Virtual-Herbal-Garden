@@ -2,7 +2,6 @@ opencv-python-headless
 numpy
 requests
 pandas 
-librosa 
 scikit-learn
 scikit-image
 Flask
