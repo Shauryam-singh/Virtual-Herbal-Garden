@@ -1,13 +1,9 @@
 opencv-python-headless
 numpy
-mediapipe
-pywhatkit
-geopy
 requests
-pandas
-openrouteservice
-pyaudio 
+pandas 
 librosa 
 scikit-learn
+scikit-image
 Flask
-SpeechRecognition
+werkzeug

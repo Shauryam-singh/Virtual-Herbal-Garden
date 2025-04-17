@@ -163,3 +163,4 @@ cython_debug/
 
 video/output/
 PyWhatKit_DB.txt
+.vercel

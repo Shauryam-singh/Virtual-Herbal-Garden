@@ -34,9 +34,9 @@ def index():
 def get_plant_info():
     return render_template('gardern.html')
 
-@app.route('/plant_images/<filename>')
-def serve_image(filename):
-    return send_from_directory('data/plant_images', filename)
+@app.route('/plant_images/<folder>/<filename>')
+def serve_image_nested(folder, filename):
+    return send_from_directory(os.path.join('data/plant_images', folder), filename)
 
 @app.route('/search')
 def search():
@@ -50,11 +50,26 @@ def search():
             plant_info_text = data['info']
             scientific_name = data.get('scientific_name', 'No scientific name available')
             habitat = data.get('habitat', 'Habitat information not available')
-            image_url = url_for('serve_image', filename=data['image'])
-            result_html += (f'<div><strong>{plant_title}</strong>: {plant_info_text}<br>'
-                            f'<em>Scientific Name:</em> {scientific_name}<br>'
-                            f'<em>Habitat:</em> {habitat}<br>'
-                            f'<img src="{image_url}" alt="{plant_title}" style="max-width: 150px; max-height: 150px;"></div><br>')
+            
+            image_name = data.get('image', 'default.jpg')  
+            image_folder = plant.lower()                   
+            image_path = os.path.join('data/plant_images', image_folder, image_name)
+            
+            # Fallback if image doesn't exist
+            if not os.path.exists(image_path):
+                image_folder = ''  # Use root
+                image_name = 'default.jpg'
+            
+            # Construct URL (pass folder and filename)
+            image_url = url_for('serve_image_nested', folder=image_folder, filename=image_name) if image_folder else url_for('serve_image', filename=image_name)
+
+            result_html += (
+                f'<div><strong>{plant_title}</strong>: {plant_info_text}<br>'
+                f'<em>Scientific Name:</em> {scientific_name}<br>'
+                f'<em>Habitat:</em> {habitat}<br>'
+                f'<img src="{image_url}" alt="{plant_title}" '
+                f'style="max-width: 150px; max-height: 150px;"></div><br>'
+            )
         return jsonify(result=result_html)
     else:
         return jsonify(result="No results found.")
