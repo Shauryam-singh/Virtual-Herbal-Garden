@@ -1,0 +1,11 @@
+opencv-python-headless
+numpy
+requests
+pandas 
+scikit-learn
+scikit-image
+Flask
+Flask-Cors
+werkzeug
+matplotlib
+seaborn

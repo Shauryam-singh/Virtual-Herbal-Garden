@@ -1,0 +1,242 @@
+{
+  "Asthma": {
+    "symptoms": ["wheezing", "shortness of breath", "chest tightness", "coughing, especially at night or early morning"],
+    "treatment": "Inhalers (bronchodilators and corticosteroids), avoiding triggers, regular monitoring"
+  },
+  "Diarrhea": {
+    "symptoms": ["frequent loose or watery stools", "abdominal cramps", "nausea", "fever"],
+    "treatment": "Oral rehydration solutions, avoiding dairy products, bland diet (BRAT: bananas, rice, applesauce, toast)"
+  },
+  "Anemia": {
+    "symptoms": ["fatigue", "pale skin", "shortness of breath", "dizziness", "cold hands and feet"],
+    "treatment": "Iron supplements, vitamin B12 and folic acid, iron-rich foods (spinach, lentils, red meat)"
+  },
+  "Gastritis": {
+    "symptoms": ["nausea", "vomiting", "loss of appetite", "bloating", "belching", "indigestion"],
+    "treatment": "Antacids, proton pump inhibitors, avoiding spicy and acidic foods, stress management"
+  },
+  "Chronic Fatigue Syndrome": {
+    "symptoms": ["persistent fatigue", "muscle and joint pain", "sleep disturbances", "headaches", "memory problems"],
+    "treatment": "Cognitive behavioral therapy, graded exercise therapy, sleep management, stress reduction techniques"
+  },
+  "Osteoarthritis": {
+    "symptoms": ["joint pain", "stiffness", "swelling", "reduced range of motion"],
+    "treatment": "Pain relievers (acetaminophen, NSAIDs), physical therapy, joint protection techniques, weight management"
+  },
+  "Psoriasis": {
+    "symptoms": ["red patches of skin covered with thick, silvery scales", "dry and cracked skin", "itching or burning sensation"],
+    "treatment": "Topical treatments (steroids, vitamin D analogs), phototherapy, systemic medications (methotrexate, biologics)"
+  },
+  "Tuberculosis": {
+    "symptoms": ["persistent cough", "coughing up blood", "night sweats", "fever", "weight loss", "fatigue"],
+    "treatment": "Antibiotic regimen (isoniazid, rifampin, pyrazinamide, ethambutol), directly observed therapy"
+  },
+  "Hepatitis B": {
+    "symptoms": ["fatigue", "abdominal pain", "loss of appetite", "nausea", "yellowing of skin and eyes (jaundice)"],
+    "treatment": "Antiviral medications (tenofovir, entecavir), regular monitoring of liver function"
+  },
+  "Hepatitis C": {
+    "symptoms": ["fatigue", "abdominal pain", "loss of appetite", "nausea", "jaundice", "dark urine"],
+    "treatment": "Direct-acting antivirals (DAAs), liver transplant in severe cases"
+  },
+  "Malaria": {
+    "symptoms": ["fever", "chills", "sweats", "headache", "nausea and vomiting", "muscle pain and fatigue"],
+    "treatment": "Antimalarial medications (chloroquine, artemisinin-based combination therapies), mosquito control measures"
+  },
+  "Dengue Fever": {
+    "symptoms": ["high fever", "severe headache", "pain behind the eyes", "joint and muscle pain", "rash", "mild bleeding"],
+    "treatment": "Supportive care (hydration, pain relievers), mosquito control to prevent spread"
+  },
+  "Chickenpox": {
+    "symptoms": ["itchy skin rash", "fever", "tiredness", "loss of appetite", "headache"],
+    "treatment": "Calamine lotion, antihistamines, fever reducers, oatmeal baths"
+  },
+  "Measles": {
+    "symptoms": ["high fever", "cough", "runny nose", "red eyes", "Koplik spots inside mouth", "rash starting on face and spreading"],
+    "treatment": "Vitamin A supplements, supportive care, isolation to prevent spread"
+  },
+  "Mumps": {
+    "symptoms": ["swelling of salivary glands", "fever", "headache", "muscle aches", "fatigue", "loss of appetite"],
+    "treatment": "Pain relievers, supportive care, isolation to prevent spread"
+  },
+  "Rubella": {
+    "symptoms": ["rash", "fever", "swollen lymph nodes", "joint pain", "conjunctivitis"],
+    "treatment": "Supportive care, isolation to prevent spread"
+  },
+  "Tetanus": {
+    "symptoms": ["muscle stiffness", "difficulty swallowing", "jaw clenching", "painful muscle contractions", "fever"],
+    "treatment": "Tetanus immunoglobulin, antibiotics, muscle relaxants, wound care"
+  },
+  "Whooping Cough (Pertussis)": {
+    "symptoms": ["severe coughing fits", "whooping sound during inhalation", "vomiting after coughing", "fatigue"],
+    "treatment": "Antibiotics (azithromycin, erythromycin), supportive care, vaccination for prevention"
+  },
+  "Polio": {
+    "symptoms": ["fever", "fatigue", "headache", "vomiting", "stiff neck", "muscle weakness"],
+    "treatment": "Supportive care, physical therapy, vaccination for prevention"
+  },
+  "Rabies": {
+    "symptoms": ["fever", "headache", "anxiety", "confusion", "agitation", "hydrophobia", "paralysis"],
+    "treatment": "Rabies post-exposure prophylaxis (PEP), wound cleaning, vaccination for prevention"
+  },
+  "Influenza (Flu)": {
+    "symptoms": ["fever", "chills", "muscle aches", "fatigue", "cough", "sore throat", "runny or stuffy nose"],
+    "treatment": "Antiviral medications (oseltamivir), rest, hydration, fever reducers"
+  },
+  "Common Cold": {
+    "symptoms": ["runny nose", "sneezing", "sore throat", "mild fever", "nasal congestion"],
+    "treatment": "Ginger tea, Tulsi leaves, warm water gargle, steam inhalation with eucalyptus oil"
+  },
+  "Headache": {
+    "symptoms": ["pain in head", "stress", "tension", "migraine", "eye strain"],
+    "treatment": "Shavasana yoga, Lavender oil massage, proper hydration, peppermint oil application"
+  },
+  "Cough": {
+    "symptoms": ["dry cough", "wet cough", "irritation in throat"],
+    "treatment": "Honey with warm water, Mulethi (licorice root) tea, steam inhalation with camphor"
+  },
+  "Fever": {
+    "symptoms": ["high temperature", "chills", "body ache"],
+    "treatment": "Giloy juice, coriander seed tea, rest with warm fluids"
+  },
+  "Acidity": {
+    "symptoms": ["burning sensation in chest", "stomach pain", "bloating"],
+    "treatment": "Cold milk, buttermilk with cumin, banana, Triphala powder"
+  },
+  "Constipation": {
+    "symptoms": ["irregular bowel movements", "bloating", "difficulty passing stools"],
+    "treatment": "Isabgol (psyllium husk), triphala powder, warm water with lemon and honey"
+  },
+  "Insomnia": {
+    "symptoms": ["difficulty sleeping", "restlessness", "fatigue"],
+    "treatment": "Ashwagandha powder, Brahmi tea, meditation, chamomile tea"
+  },
+  "Skin Rash": {
+    "symptoms": ["redness", "itching", "inflammation"],
+    "treatment": "Aloe vera gel, neem paste, sandalwood powder with rose water"
+  },
+  "Arthritis": {
+    "symptoms": ["joint pain", "swelling", "stiffness"],
+    "treatment": "Turmeric milk, Ashwagandha powder, gentle yoga, castor oil massage"
+  },
+  "Diabetes": {
+    "symptoms": ["frequent urination", "increased thirst", "fatigue"],
+    "treatment": "Bitter gourd juice, fenugreek seeds, cinnamon tea, regular walking"
+  },
+  "Hypertension": {
+    "symptoms": ["high blood pressure", "dizziness", "shortness of breath"],
+    "treatment": "Garlic, hibiscus tea, deep breathing exercises, Ashwagandha powder"
+  },
+  "Back Pain": {
+    "symptoms": ["pain in lower back", "stiffness", "limited mobility"],
+    "treatment": "Yoga poses like Bhujangasana, hot compress, sesame oil massage"
+  },
+  "Depression": {
+    "symptoms": ["low mood", "loss of interest", "fatigue", "difficulty concentrating"],
+    "treatment": "Ashwagandha, meditation, Brahmi tea, sun exposure"
+  },
+  "Allergies": {
+    "symptoms": ["sneezing", "itchy eyes", "skin irritation", "nasal congestion"],
+    "treatment": "Neem tablets, Tulsi tea, honey with warm water"
+  },
+  "Indigestion": {
+    "symptoms": ["stomach discomfort", "bloating", "nausea"],
+    "treatment": "Ajwain (carom seeds) with warm water, ginger tea, buttermilk with black salt"
+  },
+  "Migraine": {
+    "symptoms": ["severe headache", "nausea", "sensitivity to light", "visual aura", "throbbing pain"],
+    "treatment": "Rest in a dark room, hydration, magnesium supplements, cold compress, peppermint oil"
+  },
+  "Bronchitis": {
+    "symptoms": ["cough with mucus", "fatigue", "shortness of breath", "slight fever", "chest discomfort"],
+    "treatment": "Steam inhalation, honey, ginger tea, staying hydrated, avoiding smoke"
+  },
+  "Sinusitis": {
+    "symptoms": ["facial pain", "nasal congestion", "headache", "runny nose", "fever"],
+    "treatment": "Saline nasal spray, steam inhalation, warm compress, antihistamines"
+  },
+  "Tonsillitis": {
+    "symptoms": ["sore throat", "difficulty swallowing", "fever", "swollen tonsils", "bad breath"],
+    "treatment": "Warm salt water gargle, throat lozenges, pain relievers, antibiotics if bacterial"
+  },
+  "Gout": {
+    "symptoms": ["sudden severe joint pain", "redness", "swelling", "tenderness", "limited movement"],
+    "treatment": "Avoid red meat, increase water intake, cherry juice, NSAIDs, colchicine"
+  },
+  "Anxiety Disorder": {
+    "symptoms": ["restlessness", "rapid heartbeat", "sweating", "nervousness", "difficulty concentrating"],
+    "treatment": "Meditation, yoga, cognitive behavioral therapy, herbal teas, therapy sessions"
+  },
+  "Pneumonia": {
+    "symptoms": ["cough", "fever", "shortness of breath", "chest pain", "fatigue", "chills"],
+    "treatment": "Antibiotics if bacterial, rest, hydration, oxygen therapy if severe"
+  },
+  "Kidney Stones": {
+    "symptoms": ["severe pain in side/back", "blood in urine", "nausea", "frequent urination"],
+    "treatment": "Hydration, pain relievers, lemon juice, medical intervention if large stones"
+  },
+  "Urinary Tract Infection (UTI)": {
+    "symptoms": ["burning urination", "frequent urge to urinate", "cloudy urine", "pelvic pain"],
+    "treatment": "Drink water, cranberry juice, antibiotics if bacterial, good hygiene"
+  },
+  "Celiac Disease": {
+    "symptoms": ["diarrhea", "abdominal pain", "bloating", "weight loss", "fatigue"],
+    "treatment": "Gluten-free diet, nutritional supplements, probiotics"
+  },
+  "Crohn's Disease": {
+    "symptoms": ["abdominal pain", "diarrhea", "weight loss", "fatigue", "reduced appetite"],
+    "treatment": "Anti-inflammatory drugs, dietary changes, surgery if severe"
+  },
+  "Ulcerative Colitis": {
+    "symptoms": ["bloody diarrhea", "abdominal cramps", "urgency to defecate", "fatigue", "weight loss"],
+    "treatment": "Anti-inflammatory medications, diet changes, surgery if necessary"
+  },
+  "Eczema": {
+    "symptoms": ["dry skin", "redness", "itching", "inflamed patches", "cracked skin"],
+    "treatment": "Moisturizers, topical corticosteroids, antihistamines, avoiding triggers"
+  },
+  "Acne": {
+    "symptoms": ["pimples", "blackheads", "whiteheads", "oily skin", "red inflamed spots"],
+    "treatment": "Topical creams (benzoyl peroxide, salicylic acid), proper hygiene, healthy diet"
+  },
+  "Hypothyroidism": {
+    "symptoms": ["fatigue", "weight gain", "cold intolerance", "dry skin", "hair thinning"],
+    "treatment": "Thyroid hormone replacement therapy, iodine-rich diet, regular monitoring"
+  },
+  "Hyperthyroidism": {
+    "symptoms": ["weight loss", "rapid heartbeat", "nervousness", "sweating", "tremors"],
+    "treatment": "Antithyroid medications, beta-blockers, radioactive iodine, surgery if needed"
+  },
+  "Multiple Sclerosis": {
+    "symptoms": ["fatigue", "numbness", "difficulty walking", "vision problems", "muscle weakness"],
+    "treatment": "Physical therapy, disease-modifying therapies, corticosteroids for relapses"
+  },
+  "Parkinson's Disease": {
+    "symptoms": ["tremors", "rigidity", "slow movement", "impaired balance", "stiffness"],
+    "treatment": "Levodopa medications, physical therapy, exercise, deep brain stimulation in severe cases"
+  },
+  "Alzheimer's Disease": {
+    "symptoms": ["memory loss", "confusion", "difficulty speaking", "disorientation", "behavioral changes"],
+    "treatment": "Cognitive therapy, medications like donepezil, supportive care, routine structure"
+  },
+  "Epilepsy": {
+    "symptoms": ["seizures", "loss of consciousness", "staring spells", "confusion", "temporary muscle weakness"],
+    "treatment": "Anticonvulsant medications, regular sleep, stress management"
+  },
+  "HIV/AIDS": {
+    "symptoms": ["fatigue", "weight loss", "recurrent infections", "night sweats", "fever"],
+    "treatment": "Antiretroviral therapy (ART), nutrition, regular medical care"
+  },
+  "Influenza": {
+    "symptoms": ["fever", "chills", "muscle aches", "cough", "fatigue", "sore throat"],
+    "treatment": "Antiviral medications, rest, hydration, fever reducers"
+  },
+  "Zika Virus": {
+    "symptoms": ["mild fever", "rash", "joint pain", "red eyes", "headache", "muscle pain"],
+    "treatment": "Supportive care, hydration, avoid mosquito bites"
+  },
+  "Chikungunya": {
+    "symptoms": ["sudden fever", "joint pain", "headache", "muscle pain", "rash", "fatigue"],
+    "treatment": "Pain relievers, hydration, rest"
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "rose": {
+    "info": "Used for skin care and in cosmetics. The petals have anti-inflammatory properties and are often used in face masks and lotions.",
+    "scientific_name": "Rosa damascena",
+    "image": "rose.jpg",
+    "habitat": "Cultivated worldwide, especially in temperate regions. Thrives in well-drained soil and sunny locations."
+  },
+  "tulsi": {
+    "info": "Used in Ayurveda for its medicinal properties. It is believed to enhance immunity and relieve stress.",
+    "scientific_name": "Ocimum tenuiflorum",
+    "image": "tulsi.jpg",
+    "habitat": "Native to the Indian subcontinent, grows in tropical and subtropical climates. Prefers sunny locations and well-drained soil."
+  },
+  "aloevera": {
+    "info": "Known for its soothing and healing properties. Often used to treat burns, cuts, and other skin issues.",
+    "scientific_name": "Aloe vera",
+    "image": "aloevera.jpg",
+    "habitat": "Native to the Arabian Peninsula, but cultivated worldwide. Thrives in arid and semi-arid regions with well-drained soil."
+  },
+  "lavender": {
+    "info": "Used in aromatherapy for relaxation and sleep improvement. The scent is known for its calming effects.",
+    "scientific_name": "Lavandula angustifolia",
+    "image": "lavender.jpg",
+    "habitat": "Native to the Mediterranean region. Grows well in dry, sandy, or gravelly soils and prefers full sun."
+  },
+  "mint": {
+    "info": "Commonly used to aid digestion and relieve headaches. Mint leaves can be used in teas and culinary dishes.",
+    "scientific_name": "Mentha",
+    "image": "mint.jpg",
+    "habitat": "Widely distributed in temperate regions. Prefers moist, fertile soil and partial shade but can tolerate full sun."
+  },
+  "chamomile": {
+    "info": "Used to promote relaxation and help with sleep. Chamomile tea is a popular remedy for insomnia and anxiety.",
+    "scientific_name": "Matricaria chamomilla",
+    "image": "chamomile.jpg",
+    "habitat": "Native to Europe and Western Asia. Grows in well-drained soil with full sun exposure."
+  },
+  "dandelion": {
+    "info": "Used as a diuretic and to aid digestion. The leaves, roots, and flowers are used in various herbal remedies.",
+    "scientific_name": "Taraxacum officinale",
+    "image": "dandelion.jpg",
+    "habitat": "Native to Eurasia and North America. Thrives in a variety of soil types and can grow in both sunny and shaded areas."
+  },
+  "ginger": {
+    "info": "Known for its anti-nausea and anti-inflammatory properties. It is commonly used in cooking and as a remedy for nausea.",
+    "scientific_name": "Zingiber officinale",
+    "image": "ginger.jpg",
+    "habitat": "Native to Southeast Asia. Grows well in tropical and subtropical climates with rich, well-drained soil and partial shade."
+  },
+  "turmeric": {
+    "info": "Contains curcumin, which has anti-inflammatory and antioxidant effects. Often used in cooking and for its health benefits.",
+    "scientific_name": "Curcuma longa",
+    "image": "turmeric.jpg",
+    "habitat": "Native to tropical South Asia. Prefers warm, humid climates with well-drained, fertile soil."
+  },
+  "parsley": {
+    "info": "Rich in vitamins and used for its diuretic properties. Parsley is also a common garnish and has various health benefits.",
+    "scientific_name": "Petroselinum crispum",
+    "image": "parsley.jpg",
+    "habitat": "Native to the Mediterranean region. Grows well in fertile, well-drained soil with partial shade."
+  },
+  "thyme": {
+    "info": "Has antimicrobial properties and is used in cooking and medicine. Thyme is also used in traditional remedies for respiratory conditions.",
+    "scientific_name": "Thymus vulgaris",
+    "image": "thyme.jpg",
+    "habitat": "Native to the Mediterranean region. Prefers dry, well-drained soil and full sun exposure."
+  },
+  "rosemary": {
+    "info": "Used to improve memory and concentration, and for its antioxidant properties. Rosemary is commonly used in culinary dishes.",
+    "scientific_name": "Rosmarinus officinalis",
+    "image": "rosemary.jpg",
+    "habitat": "Native to the Mediterranean region. Thrives in well-drained soil and full sun."
+  },
+  "sage": {
+    "info": "Known for its digestive benefits and antimicrobial properties. Sage is often used in cooking and herbal medicine.",
+    "scientific_name": "Salvia officinalis",
+    "image": "sage.jpg",
+    "habitat": "Native to the Mediterranean region. Grows well in dry, sandy soil and full sun."
+  },
+  "oregano": {
+    "info": "Contains antioxidants and is used for its anti-inflammatory effects. Oregano is commonly used in Italian cuisine and traditional medicine.",
+    "scientific_name": "Origanum vulgare",
+    "image": "oregano.jpg",
+    "habitat": "Native to Europe, the Mediterranean region, and Western Asia. Prefers dry, well-drained soil and full sun."
+  },
+  "coriander": {
+    "info": "Used for its antioxidant and digestive benefits. Coriander seeds are used as a spice, and the leaves are used in salads and dishes.",
+    "scientific_name": "Coriandrum sativum",
+    "image": "coriander.jpg",
+    "habitat": "Native to regions spanning from Southern Europe and Northern Africa to Western Asia. Thrives in well-drained soil with full sun."
+  },
+  "fennel": {
+    "info": "Known for its digestive benefits and ability to reduce bloating. Fennel seeds are used in cooking and traditional remedies.",
+    "scientific_name": "Foeniculum vulgare",
+    "image": "fennel.jpg",
+    "habitat": "Native to the Mediterranean region. Grows well in well-drained soil and full sun."
+  },
+  "jasmine": {
+    "info": "Used in aromatherapy for its calming effects and to reduce stress. Jasmine flowers are also used in perfumes and teas.",
+    "scientific_name": "Jasminum",
+    "image": "jasmine.jpg",
+    "habitat": "Native to tropical and subtropical regions. Prefers well-drained soil and full sun to partial shade."
+  },
+  "hibiscus": {
+    "info": "Rich in antioxidants and used to lower blood pressure. Hibiscus tea is a popular beverage known for its tart flavor.",
+    "scientific_name": "Hibiscus sabdariffa",
+    "image": "hibiscus.jpg",
+    "habitat": "Native to tropical and subtropical regions. Thrives in warm climates with well-drained soil."
+  },
+  "echinacea": {
+    "info": "Boosts the immune system and is used to prevent colds. Echinacea is often used in herbal supplements and teas.",
+    "scientific_name": "Echinacea purpurea",
+    "image": "echinacea.jpg",
+    "habitat": "Native to North America. Prefers well-drained soil and full sun."
+  },
+  "banana": {
+    "info": "Rich in potassium and dietary fiber. Used as an energy source and for digestive health.",
+    "scientific_name": "Musa acuminata",
+    "image": "banana.jpg",
+    "habitat": "Native to Southeast Asia, now grown worldwide in tropical climates. Requires warm temperatures and moist, fertile soil."
+  },
+  "bilimbi": {
+    "info": "Fruit is sour and used in traditional medicine to lower cholesterol and control hypertension.",
+    "scientific_name": "Averrhoa bilimbi",
+    "image": "bilimbi.jpg",
+    "habitat": "Native to Southeast Asia. Prefers warm, humid climates and well-drained soil."
+  },
+  "cantaloupe": {
+    "info": "Rich in vitamin C and antioxidants. Helps with hydration and immune support.",
+    "scientific_name": "Cucumis melo",
+    "image": "cantaloupe.jpg",
+    "habitat": "Cultivated in warm regions worldwide. Prefers sandy loam soil and full sunlight."
+  },
+  "cassava": {
+    "info": "Staple root crop rich in carbohydrates. Used to make flour, tapioca, and traditional foods.",
+    "scientific_name": "Manihot esculenta",
+    "image": "cassava.jpg",
+    "habitat": "Native to South America, widely cultivated in tropical regions. Grows in poor, sandy soils."
+  },
+  "coconut": {
+    "info": "Fruit provides water, milk, oil, and fiber. Used in food, cosmetics, and medicine.",
+    "scientific_name": "Cocos nucifera",
+    "image": "coconut.jpg",
+    "habitat": "Tropical coastal regions worldwide. Requires sandy soil and high humidity."
+  },
+  "corn": {
+    "info": "Staple cereal crop rich in carbohydrates. Used as food, livestock feed, and biofuel.",
+    "scientific_name": "Zea mays",
+    "image": "corn.jpg",
+    "habitat": "Native to the Americas, cultivated globally. Grows well in warm climates and fertile soil."
+  },
+  "cucumber": {
+    "info": "High in water content, promotes hydration and skin health. Commonly eaten fresh or pickled.",
+    "scientific_name": "Cucumis sativus",
+    "image": "cucumber.jpg",
+    "habitat": "Native to South Asia, cultivated worldwide. Prefers warm climates with moist soil."
+  },
+  "curcuma": {
+    "info": "Includes turmeric species, used for anti-inflammatory and antioxidant purposes.",
+    "scientific_name": "Curcuma longa",
+    "image": "curcuma.jpg",
+    "habitat": "Native to tropical South Asia. Thrives in warm, humid regions with fertile soil."
+  },
+  "eggplant": {
+    "info": "Rich in fiber, antioxidants, and vitamins. Used in various cuisines worldwide.",
+    "scientific_name": "Solanum melongena",
+    "image": "eggplant.jpg",
+    "habitat": "Native to Asia, cultivated globally. Prefers warm climates with well-drained soil."
+  },
+  "galangal": {
+    "info": "Used in Asian cuisine and traditional medicine. Believed to improve digestion and reduce inflammation.",
+    "scientific_name": "Alpinia galanga",
+    "image": "galangal.jpg",
+    "habitat": "Native to Southeast Asia. Thrives in tropical climates with moist, fertile soil."
+  },
+  "guava": {
+    "info": "Rich in vitamin C and antioxidants. Used to boost immunity and digestion.",
+    "scientific_name": "Psidium guajava",
+    "image": "guava.jpg",
+    "habitat": "Native to Central America, now cultivated in tropical regions worldwide. Grows in various soils."
+  },
+  "kale": {
+    "info": "Leafy green vegetable high in vitamins A, C, and K. Known as a superfood.",
+    "scientific_name": "Brassica oleracea var. sabellica",
+    "image": "kale.jpg",
+    "habitat": "Native to the Mediterranean. Grows well in cool climates with moist, fertile soil."
+  },
+  "longbeans": {
+    "info": "Rich in fiber and protein. Commonly used in Asian stir-fries and salads.",
+    "scientific_name": "Vigna unguiculata subsp. sesquipedalis",
+    "image": "longbeans.jpg",
+    "habitat": "Native to Africa, widely cultivated in Asia. Prefers warm climates with well-drained soil."
+  },
+  "mango": {
+    "info": "Tropical fruit rich in vitamins A and C. Known for its sweet flavor and health benefits.",
+    "scientific_name": "Mangifera indica",
+    "image": "mango.jpg",
+    "habitat": "Native to South Asia. Grows best in tropical and subtropical climates."
+  },
+  "melon": {
+    "info": "Includes many varieties like honeydew and muskmelon. Hydrating and rich in vitamins.",
+    "scientific_name": "Cucumis melo",
+    "image": "melon.jpg",
+    "habitat": "Cultivated worldwide in warm climates. Requires well-drained soil and full sun."
+  },
+  "orange": {
+    "info": "Citrus fruit high in vitamin C. Boosts immunity and is used in juices, oils, and cosmetics.",
+    "scientific_name": "Citrus sinensis",
+    "image": "orange.jpg",
+    "habitat": "Native to Asia, cultivated worldwide in subtropical climates."
+  },
+  "paddy": {
+    "info": "Rice plant, staple food for over half the world’s population.",
+    "scientific_name": "Oryza sativa",
+    "image": "paddy.jpg",
+    "habitat": "Native to Asia, cultivated in flooded fields in tropical and subtropical regions."
+  },
+  "papaya": {
+    "info": "Rich in vitamin C and digestive enzyme papain. Helps with digestion and skin care.",
+    "scientific_name": "Carica papaya",
+    "image": "papaya.jpg",
+    "habitat": "Native to the tropics of the Americas. Thrives in warm, humid regions."
+  },
+  "pepper_chili": {
+    "info": "Rich in capsaicin, known for its spicy flavor and metabolic benefits.",
+    "scientific_name": "Capsicum annuum",
+    "image": "pepper_chili.jpg",
+    "habitat": "Native to the Americas, now cultivated globally. Prefers warm climates."
+  },
+  "pineapple": {
+    "info": "Tropical fruit rich in vitamin C and bromelain enzyme. Aids digestion and boosts immunity.",
+    "scientific_name": "Ananas comosus",
+    "image": "pineapple.jpg",
+    "habitat": "Native to South America, cultivated in tropical regions."
+  },
+  "pomelo": {
+    "info": "Largest citrus fruit, rich in vitamin C and antioxidants.",
+    "scientific_name": "Citrus maxima",
+    "image": "pomelo.jpg",
+    "habitat": "Native to Southeast Asia. Grows in tropical and subtropical climates."
+  },
+  "shallot": {
+    "info": "Aromatic bulb with antioxidant and antibacterial properties. Used in cooking and medicine.",
+    "scientific_name": "Allium cepa var. aggregatum",
+    "image": "shallot.jpg",
+    "habitat": "Native to Central or Southwest Asia, cultivated worldwide."
+  },
+  "soybeans": {
+    "info": "Rich in protein and used for soy products like tofu, soy milk, and soy sauce.",
+    "scientific_name": "Glycine max",
+    "image": "soybeans.jpg",
+    "habitat": "Native to East Asia, cultivated worldwide. Prefers warm climates."
+  },
+  "spinach": {
+    "info": "Leafy green vegetable rich in iron, vitamins, and antioxidants.",
+    "scientific_name": "Spinacia oleracea",
+    "image": "spinach.jpg",
+    "habitat": "Native to Persia, cultivated globally. Prefers cool climates with moist, fertile soil."
+  },
+  "sweet_potatoes": {
+    "info": "Rich in fiber, vitamins, and antioxidants. Used as a staple food in many cultures.",
+    "scientific_name": "Ipomoea batatas",
+    "image": "sweet_potatoes.jpg",
+    "habitat": "Native to Central and South America. Grows in tropical and subtropical climates."
+  },
+  "tobacco": {
+    "info": "Cultivated for its leaves, primarily used for smoking and nicotine extraction.",
+    "scientific_name": "Nicotiana tabacum",
+    "image": "tobacco.jpg",
+    "habitat": "Native to the Americas, cultivated worldwide in warm climates."
+  },
+  "waterapple": {
+    "info": "Tropical fruit with hydrating properties. Sweet and crunchy, used fresh or in salads.",
+    "scientific_name": "Syzygium aqueum",
+    "image": "waterapple.jpg",
+    "habitat": "Native to Southeast Asia. Grows in tropical, humid climates."
+  },
+  "watermelon": {
+    "info": "Hydrating fruit rich in lycopene and vitamins. Promotes hydration and heart health.",
+    "scientific_name": "Citrullus lanatus",
+    "image": "watermelon.jpg",
+    "habitat": "Native to Africa, cultivated worldwide in warm climates."
+  }
+}

@@ -4,7 +4,7 @@ Healthify is a web-based platform that allows users to **identify plants**, **ex
 
 ---
 
-## Features
+## 🚀 Features
 
 - **Plant Identification**  
   Upload an image of a plant, and Healthify will classify it and provide detailed information.
@@ -19,66 +19,70 @@ Healthify is a web-based platform that allows users to **identify plants**, **ex
   Enter symptoms or disease names and get recommended natural remedies using plants.
 
 - **Responsive & Interactive UI**  
-  Built with modern HTML, CSS, and JavaScript, fully responsive across devices.
+  Built with **Flask API + React (Vite + TS)** for a modern, responsive experience.
 
 ---
 
-## Technology Stack
+## 🛠️ Technology Stack
 
 - **Backend:** Python, Flask  
 - **Machine Learning:** Scikit-learn, HOG features, Random Forest classifier  
-- **Frontend:** HTML5, CSS3, JavaScript  
+- **Frontend:** React (Vite + TypeScript), TailwindCSS  
 - **Database:** JSON files for plant info and diseases  
 - **File Storage:** Local filesystem for plant images  
 
 ---
 
-## Installation
+## ⚡ Installation
 
-1. **Clone the repository**
+### 1️⃣ Clone the repository
 ```bash
 git clone https://github.com/Shauryam-singh/Virtual-Herbal-Garden.git
+
 cd Virtual-Herbal-Garden
 ```
 
-2. **Dataset**
+### 2️⃣ Backend Setup
 ```bash
-https://www.kaggle.com/datasets/yudhaislamisulistya/plants-type-datasets?resource=download
-```
+cd backend
 
-3. **Create a virtual environment**
-```bash
 python -m venv venv
+
 source venv/bin/activate   # Linux/macOS
 venv\Scripts\activate      # Windows
-```
 
-4. **Install dependencies**
-```bash
 pip install -r requirements.txt
-```
 
-5. **Run the application**
-```bash
 python app.py
 ```
 
----
+### 3️⃣ Frontend Setup
+```bash
+cd ../frontend
 
-## Usage
+npm install
 
-- Plant Identification: Upload an image via the “Upload Image” button to identify the plant.
-- Search: Use the search bar to find plant information quickly.
-- Quiz: Test your plant knowledge through the quiz.
-- Disease Treatment: Enter symptoms to get recommended plant-based remedies.
-
-## Future Improvements
-
-- AI-based disease recognition from uploaded leaf images.
-- Mobile-friendly UI enhancements for better responsiveness.
+npm run dev
+```
 
 ---
 
-## License
+## 📌 Usage
+- Plant Identification → Upload an image via the “Upload Image” button.
+- Search → Use the search bar to quickly find plant info.
+- Quiz → Test your plant knowledge with quizzes.
+- Disease Treatment → Enter symptoms/disease names to get remedies.
 
+---
+
+## 🔮 Future Improvements
+AI-based disease recognition directly from uploaded leaf images.
+
+Offline mode with PWA support.
+
+Expanded dataset with more plant varieties.
+
+---
+
+### 📜 License
 This project is licensed under the MIT License.
