@@ -9,3 +9,4 @@ Flask-Cors
 werkzeug
 matplotlib
 seaborn
+gunicorn
