@@ -164,3 +164,8 @@ cython_debug/
 video/output/
 PyWhatKit_DB.txt
 .vercel
+data/Test_Set_Folder/
+data/Train_Set_Folder/
+data/Validation_Set_Folder/
+.vscode/
+models/plant_recognition_rf_model.pkl
