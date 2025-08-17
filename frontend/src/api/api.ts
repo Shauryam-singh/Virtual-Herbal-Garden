@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'https://virtual-herbal-garden-qcsb.onrender.com/api',
+  baseURL: 'http://localhost:5000/api',
 });
 
 export const searchPlants = (query: string) => API.get(`/search?q=${query}`);
