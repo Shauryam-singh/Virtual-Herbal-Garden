@@ -23,19 +23,6 @@ Healthify is a web-based platform that allows users to **identify plants**, **ex
 
 ---
 
-## Screenshots
-
-![Home](screenshots/home.png)  
-*Home page with plant search and upload options.*
-
-![Quiz](screenshots/quiz.png)  
-*Interactive plant quiz feature.*
-
-![Disease & Treatment](screenshots/disease_treatment.png)  
-*Enter symptoms to get plant-based treatment recommendations.*
-
----
-
 ## Technology Stack
 
 - **Backend:** Python, Flask  
@@ -53,19 +40,25 @@ Healthify is a web-based platform that allows users to **identify plants**, **ex
 git clone https://github.com/Shauryam-singh/Virtual-Herbal-Garden.git
 cd Virtual-Herbal-Garden
 ```
-2. **Create a virtual environment**
+
+2. **Dataset**
+```bash
+https://www.kaggle.com/datasets/yudhaislamisulistya/plants-type-datasets?resource=download
+```
+
+3. **Create a virtual environment**
 ```bash
 python -m venv venv
 source venv/bin/activate   # Linux/macOS
 venv\Scripts\activate      # Windows
 ```
 
-3. **Install dependencies**
+4. **Install dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 
-4. **Run the application**
+5. **Run the application**
 ```bash
 python app.py
 ```
