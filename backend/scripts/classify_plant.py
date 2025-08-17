@@ -1,11 +1,22 @@
+import os
+import joblib
+import gdown
 import cv2
 import numpy as np
-import joblib
 from skimage.feature import hog
 from skimage import color
-import io
 
-plant_classifier = joblib.load('models/plant_recognition_rf_model.pkl')
+MODEL_URL = "https://drive.google.com/uc?id=1k7aLu6e3BQ7eSiuvvlWuZqMJthu06kg_"
+MODEL_PATH = "models/plant_recognition_rf_model.pkl"
+
+os.makedirs("models", exist_ok=True)
+
+if not os.path.exists(MODEL_PATH):
+    print("Downloading model from Drive...")
+    gdown.download(MODEL_URL, MODEL_PATH, quiet=False)
+
+plant_classifier = joblib.load(MODEL_PATH)
+print("Model loaded successfully!")
 
 def extract_features_from_bytes(file_bytes):
     image = cv2.imdecode(np.frombuffer(file_bytes, np.uint8), cv2.IMREAD_COLOR)

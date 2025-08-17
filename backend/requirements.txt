@@ -10,3 +10,4 @@ werkzeug
 matplotlib
 seaborn
 gunicorn
+gdown
