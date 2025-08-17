@@ -70,5 +70,5 @@ plt.show()
 # print(f"🔄 Cross-validation mean accuracy: {cv_scores.mean():.4f}")
 
 os.makedirs("models", exist_ok=True)
-joblib.dump(clf, "models/plant_recognition_rf_model.pkl")
+joblib.dump(clf, 'models/plant_model_compressed.pkl', compress=3)
 print("✅ Multi-class plant recognition model trained and saved.")
