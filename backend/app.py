@@ -1,6 +1,7 @@
 import base64
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
+from scripts.classify_disease import classify_disease
 from scripts.classify_plant import classify_plant
 import json
 import random
@@ -97,6 +98,41 @@ def upload():
     except Exception as e:
         return jsonify(error=str(e)), 500
 
+@app.route('/api/disease_upload', methods=['POST'])
+def disease_upload():
+    if 'file' not in request.files:
+        return jsonify({"error": "No file uploaded"}), 400
+
+    file = request.files['file']
+    if file.filename == '':
+        return jsonify({"error": "Empty filename"}), 400
+
+    try:
+        file_bytes = file.read()
+        if len(file_bytes) == 0:
+            return jsonify({"error": "Empty file"}), 400
+
+        disease_name = classify_disease(file_bytes)
+        if not disease_name:
+            return jsonify({"error": "Could not classify image"}), 400
+
+        import base64
+        encoded = base64.b64encode(file_bytes).decode()
+        mime_type = file.content_type or "image/jpeg"
+        image_url = f"data:{mime_type};base64,{encoded}"
+
+        response = {
+            "disease": disease_name,
+            "image_url": image_url,
+            "status": "success"
+        }
+        return jsonify(response)
+
+    except Exception as e:
+        import traceback
+        print("ERROR in disease_upload:", e)
+        traceback.print_exc()
+        return jsonify({"error": str(e)}), 500
 
 @app.route('/api/quiz')
 def quiz():

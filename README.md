@@ -42,7 +42,14 @@ git clone https://github.com/Shauryam-singh/Virtual-Herbal-Garden.git
 cd Virtual-Herbal-Garden
 ```
 
-### 2️⃣ Backend Setup
+### 2️⃣ Dataset
+```bash
+https://www.kaggle.com/datasets/yudhaislamisulistya/plants-type-datasets
+
+https://www.kaggle.com/datasets/mexwell/crop-diseases-classification
+```
+
+### 3️⃣ Backend Setup
 ```bash
 cd backend
 
@@ -56,7 +63,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-### 3️⃣ Frontend Setup
+### 4️⃣ Frontend Setup
 ```bash
 cd ../frontend
 

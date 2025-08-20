@@ -167,5 +167,7 @@ PyWhatKit_DB.txt
 data/Test_Set_Folder/
 data/Train_Set_Folder/
 data/Validation_Set_Folder/
+data/train_images/
 .vscode/
 models/plant_recognition_rf_model.pkl
+models/crop_disease_model.pkl
