@@ -43,22 +43,22 @@ def search():
     for plant, info in plant_info.items():
         plant_name = plant.lower().replace("_", " ")
 
-        # ✅ Case 1: No query → return all plants
         if not query or query in plant_name:
             image_name = info.get('image_url', 'default.jpg')
             image_url = f"/plants/{image_name}"
 
-            # Build the response in the Plant interface shape
             plant_data = {
+                "id": plant,
                 "name": info.get("name", plant.replace("_", " ")),
                 "scientific_name": info.get("scientific_name", ""),
                 "habitat": info.get("habitat", ""),
                 "description": info.get("description", ""),
                 "image_url": image_url,
-                "model_url": info.get("model_url"),  # optional
-                "medicinal_uses": info.get("medicinal_uses"),  # optional
-                "preparation_methods": info.get("preparation_methods"),  # optional
-                "precautions": info.get("precautions")  # optional
+                "model_url": info.get("model_url", None),
+                "medicinal_uses": info.get("medicinal_uses", []),
+                "preparation_methods": info.get("preparation_methods", []),
+                "precautions": info.get("precautions", ""),
+                "locations": info.get("locations", [])
             }
 
             results[plant] = plant_data
