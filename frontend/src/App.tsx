@@ -5,6 +5,7 @@ import Disease from "./pages/Disease";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import QuizPage from "./pages/QuizPage";
+import PlantDetails from "./pages/PlantDetails";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/garden" element={<Garden />} />
         <Route path="/disease" element={<Disease />} />
         <Route path="/quiz" element={<QuizPage />} /> 
+        <Route path="/plants/:id" element={<PlantDetails />} />
       </Routes>
       <Footer />
     </Router>

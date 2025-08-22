@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 interface PlantCardProps {
   name: string;
   info: string;
@@ -7,6 +9,8 @@ interface PlantCardProps {
 }
 
 export default function PlantCard({ name, info, scientific_name, habitat, image_url }: PlantCardProps) {
+  const navigate = useNavigate();
+
   return (
     <div className="bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-2xl transition-shadow duration-300 w-64 flex flex-col">
       {/* Image */}
@@ -27,7 +31,10 @@ export default function PlantCard({ name, info, scientific_name, habitat, image_
           <p className="text-gray-500 text-xs">Habitat: {habitat}</p>
         </div>
 
-        <button className="mt-4 w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg font-semibold transition-colors">
+        <button
+          className="mt-4 w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg font-semibold transition-colors"
+          onClick={() => navigate(`/plants/${encodeURIComponent(name)}`)}
+        >
           Learn More
         </button>
       </div>

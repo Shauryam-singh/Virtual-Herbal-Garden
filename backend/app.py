@@ -22,13 +22,15 @@ def generate_questions(plant_info):
     quiz_questions = []
 
     for idx, (plant, info) in enumerate(plant_info.items()):
+        other_descriptions = [i['description'] for k, i in plant_info.items() if k != plant]
+
+        sample_size = min(3, len(other_descriptions))
+
         question = {
             "id": idx,
             "question": f"What is {plant.replace('_', ' ')} known for?",
-            "options": [info['info']] + random.sample(
-                [i['info'] for k, i in plant_info.items() if k != plant], 3
-            ),
-            "answer": info['info']
+            "options": [info['description']] + random.sample(other_descriptions, sample_size),
+            "answer": info['description']
         }
         random.shuffle(question["options"])
         quiz_questions.append(question)
@@ -39,17 +41,27 @@ def search():
     results = {}
 
     for plant, info in plant_info.items():
-        if plant.lower() == query:
-            image_name = info.get('image', 'default.jpg')
+        plant_name = plant.lower().replace("_", " ")
+
+        # ✅ Case 1: No query → return all plants
+        if not query or query in plant_name:
+            image_name = info.get('image_url', 'default.jpg')
             image_url = f"/plants/{image_name}"
 
-            results[plant] = {
-                "name": plant.replace("_", " "),
-                "info": info.get('info', ''),
-                "scientific_name": info.get('scientific_name', ''),
-                "habitat": info.get('habitat', ''),
-                "image_url": image_url
+            # Build the response in the Plant interface shape
+            plant_data = {
+                "name": info.get("name", plant.replace("_", " ")),
+                "scientific_name": info.get("scientific_name", ""),
+                "habitat": info.get("habitat", ""),
+                "description": info.get("description", ""),
+                "image_url": image_url,
+                "model_url": info.get("model_url"),  # optional
+                "medicinal_uses": info.get("medicinal_uses"),  # optional
+                "preparation_methods": info.get("preparation_methods"),  # optional
+                "precautions": info.get("precautions")  # optional
             }
+
+            results[plant] = plant_data
 
     return jsonify(results)
 

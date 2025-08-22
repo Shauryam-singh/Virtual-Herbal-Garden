@@ -1,284 +1,823 @@
 {
   "rose": {
-    "info": "Used for skin care and in cosmetics. The petals have anti-inflammatory properties and are often used in face masks and lotions.",
+    "name": "Rose",
     "scientific_name": "Rosa damascena",
-    "image": "rose.jpg",
-    "habitat": "Cultivated worldwide, especially in temperate regions. Thrives in well-drained soil and sunny locations."
+    "habitat": "Cultivated worldwide, especially in temperate regions. Thrives in well-drained soil and sunny locations.",
+    "description": "Used for skin care and in cosmetics. The petals have anti-inflammatory properties and are often used in face masks and lotions.",
+    "image_url": "rose.jpg",
+    "medicinal_uses": [
+      "Anti-inflammatory",
+      "Skin care (soothing)",
+      "Aromatherapy (calming)"
+    ],
+    "preparation_methods": [
+      "Rose water",
+      "Essential oil",
+      "Tea"
+    ],
+    "precautions": "Generally safe, but people with plant allergies should be cautious."
   },
   "tulsi": {
-    "info": "Used in Ayurveda for its medicinal properties. It is believed to enhance immunity and relieve stress.",
+    "name": "Tulsi",
     "scientific_name": "Ocimum tenuiflorum",
-    "image": "tulsi.jpg",
-    "habitat": "Native to the Indian subcontinent, grows in tropical and subtropical climates. Prefers sunny locations and well-drained soil."
+    "habitat": "Native to the Indian subcontinent, grows in tropical and subtropical climates. Prefers sunny locations and well-drained soil.",
+    "description": "Used in Ayurveda for its medicinal properties. It is believed to enhance immunity and relieve stress.",
+    "image_url": "tulsi.jpg",
+    "medicinal_uses": [
+      "Immune booster",
+      "Stress relief",
+      "Respiratory health"
+    ],
+    "preparation_methods": [
+      "Tea",
+      "Tinctures"
+    ],
+    "precautions": "Avoid during pregnancy without consulting a healthcare provider. May lower blood sugar."
   },
   "aloevera": {
-    "info": "Known for its soothing and healing properties. Often used to treat burns, cuts, and other skin issues.",
+    "name": "Aloevera",
     "scientific_name": "Aloe vera",
-    "image": "aloevera.jpg",
-    "habitat": "Native to the Arabian Peninsula, but cultivated worldwide. Thrives in arid and semi-arid regions with well-drained soil."
+    "habitat": "Native to the Arabian Peninsula, but cultivated worldwide. Thrives in arid and semi-arid regions with well-drained soil.",
+    "description": "Known for its soothing and healing properties. Often used to treat burns, cuts, and other skin issues.",
+    "image_url": "aloevera.jpg",
+    "medicinal_uses": [
+      "Topical treatment for burns and cuts",
+      "Skin moisturizer",
+      "Digestive aid (internal use)"
+    ],
+    "preparation_methods": [
+      "Gel extracted from leaves",
+      "Juice"
+    ],
+    "precautions": "Do not consume the whole leaf; only use the inner gel. Oral consumption can have a laxative effect."
   },
   "lavender": {
-    "info": "Used in aromatherapy for relaxation and sleep improvement. The scent is known for its calming effects.",
+    "name": "Lavender",
     "scientific_name": "Lavandula angustifolia",
-    "image": "lavender.jpg",
-    "habitat": "Native to the Mediterranean region. Grows well in dry, sandy, or gravelly soils and prefers full sun."
+    "habitat": "Native to the Mediterranean region. Grows well in dry, sandy, or gravelly soils and prefers full sun.",
+    "description": "Used in aromatherapy for relaxation and sleep improvement. The scent is known for its calming effects.",
+    "image_url": "lavender.jpg",
+    "medicinal_uses": [
+      "Relaxation",
+      "Sleep improvement",
+      "Anxiety reduction"
+    ],
+    "preparation_methods": [
+      "Essential oil (diffused or topical)",
+      "Tea",
+      "Pouches"
+    ],
+    "precautions": "Undiluted essential oil can irritate the skin. Do not ingest essential oil."
   },
   "mint": {
-    "info": "Commonly used to aid digestion and relieve headaches. Mint leaves can be used in teas and culinary dishes.",
+    "name": "Mint",
     "scientific_name": "Mentha",
-    "image": "mint.jpg",
-    "habitat": "Widely distributed in temperate regions. Prefers moist, fertile soil and partial shade but can tolerate full sun."
+    "habitat": "Widely distributed in temperate regions. Prefers moist, fertile soil and partial shade but can tolerate full sun.",
+    "description": "Commonly used to aid digestion and relieve headaches. Mint leaves can be used in teas and culinary dishes.",
+    "image_url": "mint.jpg",
+    "medicinal_uses": [
+      "Digestive aid",
+      "Headache relief",
+      "Antimicrobial"
+    ],
+    "preparation_methods": [
+      "Tea",
+      "Fresh leaves for culinary use"
+    ],
+    "precautions": "Can cause heartburn in some people. Avoid large amounts during pregnancy."
   },
   "chamomile": {
-    "info": "Used to promote relaxation and help with sleep. Chamomile tea is a popular remedy for insomnia and anxiety.",
+    "name": "Chamomile",
     "scientific_name": "Matricaria chamomilla",
-    "image": "chamomile.jpg",
-    "habitat": "Native to Europe and Western Asia. Grows in well-drained soil with full sun exposure."
+    "habitat": "Native to Europe and Western Asia. Grows in well-drained soil with full sun exposure.",
+    "description": "Used to promote relaxation and help with sleep. Chamomile tea is a popular remedy for insomnia and anxiety.",
+    "image_url": "chamomile.jpg",
+    "medicinal_uses": [
+      "Relaxation",
+      "Sleep aid",
+      "Anxiety relief",
+      "Stomach upset"
+    ],
+    "preparation_methods": [
+      "Tea",
+      "Topical compress"
+    ],
+    "precautions": "People with ragweed allergies may have a reaction. Avoid if on blood thinners."
   },
   "dandelion": {
-    "info": "Used as a diuretic and to aid digestion. The leaves, roots, and flowers are used in various herbal remedies.",
+    "name": "Dandelion",
     "scientific_name": "Taraxacum officinale",
-    "image": "dandelion.jpg",
-    "habitat": "Native to Eurasia and North America. Thrives in a variety of soil types and can grow in both sunny and shaded areas."
+    "habitat": "Native to Eurasia and North America. Thrives in a variety of soil types and can grow in both sunny and shaded areas.",
+    "description": "Used as a diuretic and to aid digestion. The leaves, roots, and flowers are used in various herbal remedies.",
+    "image_url": "dandelion.jpg",
+    "medicinal_uses": [
+      "Diuretic",
+      "Digestive aid",
+      "Liver support"
+    ],
+    "preparation_methods": [
+      "Tea (from roots or leaves)",
+      "Salad (young leaves)"
+    ],
+    "precautions": "May cause an allergic reaction in some people. Consult a doctor if you have gallbladder issues."
   },
   "ginger": {
-    "info": "Known for its anti-nausea and anti-inflammatory properties. It is commonly used in cooking and as a remedy for nausea.",
+    "name": "Ginger",
     "scientific_name": "Zingiber officinale",
-    "image": "ginger.jpg",
-    "habitat": "Native to Southeast Asia. Grows well in tropical and subtropical climates with rich, well-drained soil and partial shade."
+    "habitat": "Native to Southeast Asia. Grows well in tropical and subtropical climates with rich, well-drained soil and partial shade.",
+    "description": "Known for its anti-nausea and anti-inflammatory properties. It is commonly used in cooking and as a remedy for nausea.",
+    "image_url": "ginger.jpg",
+    "medicinal_uses": [
+      "Anti-nausea",
+      "Anti-inflammatory",
+      "Digestive aid"
+    ],
+    "preparation_methods": [
+      "Tea",
+      "Powder",
+      "Fresh root in cooking"
+    ],
+    "precautions": "May interact with blood-thinning medications. Can cause heartburn in some individuals."
   },
   "turmeric": {
-    "info": "Contains curcumin, which has anti-inflammatory and antioxidant effects. Often used in cooking and for its health benefits.",
+    "name": "Turmeric",
     "scientific_name": "Curcuma longa",
-    "image": "turmeric.jpg",
-    "habitat": "Native to tropical South Asia. Prefers warm, humid climates with well-drained, fertile soil."
+    "habitat": "Native to tropical South Asia. Prefers warm, humid climates with well-drained, fertile soil.",
+    "description": "Contains curcumin, which has anti-inflammatory and antioxidant effects. Often used in cooking and for its health benefits.",
+    "image_url": "turmeric.jpg",
+    "medicinal_uses": [
+      "Anti-inflammatory",
+      "Antioxidant",
+      "Digestive aid"
+    ],
+    "preparation_methods": [
+      "Powder",
+      "Paste",
+      "Tea"
+    ],
+    "precautions": "Can act as a blood thinner. Avoid if you have gallbladder problems or are pregnant."
   },
   "parsley": {
-    "info": "Rich in vitamins and used for its diuretic properties. Parsley is also a common garnish and has various health benefits.",
+    "name": "Parsley",
     "scientific_name": "Petroselinum crispum",
-    "image": "parsley.jpg",
-    "habitat": "Native to the Mediterranean region. Grows well in fertile, well-drained soil with partial shade."
+    "habitat": "Native to the Mediterranean region. Grows well in fertile, well-drained soil with partial shade.",
+    "description": "Rich in vitamins and used for its diuretic properties. Parsley is also a common garnish and has various health benefits.",
+    "image_url": "parsley.jpg",
+    "medicinal_uses": [
+      "Diuretic",
+      "Digestive aid",
+      "Nutrient-rich (vitamins)"
+    ],
+    "preparation_methods": [
+      "Fresh leaves for culinary use",
+      "Tea"
+    ],
+    "precautions": "Pregnant women should consume in moderation, as high doses may affect uterine contractions."
   },
   "thyme": {
-    "info": "Has antimicrobial properties and is used in cooking and medicine. Thyme is also used in traditional remedies for respiratory conditions.",
+    "name": "Thyme",
     "scientific_name": "Thymus vulgaris",
-    "image": "thyme.jpg",
-    "habitat": "Native to the Mediterranean region. Prefers dry, well-drained soil and full sun exposure."
+    "habitat": "Native to the Mediterranean region. Prefers dry, well-drained soil and full sun exposure.",
+    "description": "Has antimicrobial properties and is used in cooking and medicine. Thyme is also used in traditional remedies for respiratory conditions.",
+    "image_url": "thyme.jpg",
+    "medicinal_uses": [
+      "Antimicrobial",
+      "Respiratory health",
+      "Antioxidant"
+    ],
+    "preparation_methods": [
+      "Tea",
+      "Essential oil (diffused or diluted)",
+      "Fresh leaves for cooking"
+    ],
+    "precautions": "Thyme oil can be irritating to the skin. Avoid large amounts if pregnant."
   },
   "rosemary": {
-    "info": "Used to improve memory and concentration, and for its antioxidant properties. Rosemary is commonly used in culinary dishes.",
+    "name": "Rosemary",
     "scientific_name": "Rosmarinus officinalis",
-    "image": "rosemary.jpg",
-    "habitat": "Native to the Mediterranean region. Thrives in well-drained soil and full sun."
+    "habitat": "Native to the Mediterranean region. Thrives in well-drained soil and full sun.",
+    "description": "Used to improve memory and concentration, and for its antioxidant properties. Rosemary is commonly used in culinary dishes.",
+    "image_url": "rosemary.jpg",
+    "medicinal_uses": [
+      "Memory and concentration",
+      "Antioxidant",
+      "Anti-inflammatory"
+    ],
+    "preparation_methods": [
+      "Tea",
+      "Essential oil",
+      "Fresh leaves for cooking"
+    ],
+    "precautions": "High doses can be dangerous. Avoid if pregnant or if you have seizures."
   },
   "sage": {
-    "info": "Known for its digestive benefits and antimicrobial properties. Sage is often used in cooking and herbal medicine.",
+    "name": "Sage",
     "scientific_name": "Salvia officinalis",
-    "image": "sage.jpg",
-    "habitat": "Native to the Mediterranean region. Grows well in dry, sandy soil and full sun."
+    "habitat": "Native to the Mediterranean region. Grows well in dry, sandy soil and full sun.",
+    "description": "Known for its digestive benefits and antimicrobial properties. Sage is often used in cooking and herbal medicine.",
+    "image_url": "sage.jpg",
+    "medicinal_uses": [
+      "Digestive benefits",
+      "Antimicrobial",
+      "Memory enhancement"
+    ],
+    "preparation_methods": [
+      "Tea",
+      "Tincture",
+      "Fresh or dried leaves for cooking"
+    ],
+    "precautions": "Excessive use of common sage can be toxic due to a compound called thujone. Avoid large doses if pregnant."
   },
   "oregano": {
-    "info": "Contains antioxidants and is used for its anti-inflammatory effects. Oregano is commonly used in Italian cuisine and traditional medicine.",
+    "name": "Oregano",
     "scientific_name": "Origanum vulgare",
-    "image": "oregano.jpg",
-    "habitat": "Native to Europe, the Mediterranean region, and Western Asia. Prefers dry, well-drained soil and full sun."
+    "habitat": "Native to Europe, the Mediterranean region, and Western Asia. Prefers dry, well-drained soil and full sun.",
+    "description": "Contains antioxidants and is used for its anti-inflammatory effects. Oregano is commonly used in Italian cuisine and traditional medicine.",
+    "image_url": "oregano.jpg",
+    "medicinal_uses": [
+      "Antioxidant",
+      "Anti-inflammatory",
+      "Antimicrobial"
+    ],
+    "preparation_methods": [
+      "Tea",
+      "Essential oil",
+      "Dried leaves for cooking"
+    ],
+    "precautions": "Oregano oil can be very potent and should be diluted. Not recommended for pregnant women in medicinal amounts."
   },
   "coriander": {
-    "info": "Used for its antioxidant and digestive benefits. Coriander seeds are used as a spice, and the leaves are used in salads and dishes.",
+    "name": "Coriander",
     "scientific_name": "Coriandrum sativum",
-    "image": "coriander.jpg",
-    "habitat": "Native to regions spanning from Southern Europe and Northern Africa to Western Asia. Thrives in well-drained soil with full sun."
+    "habitat": "Native to regions spanning from Southern Europe and Northern Africa to Western Asia. Thrives in well-drained soil with full sun.",
+    "description": "Used for its antioxidant and digestive benefits. Coriander seeds are used as a spice, and the leaves are used in salads and dishes.",
+    "image_url": "coriander.jpg",
+    "medicinal_uses": [
+      "Antioxidant",
+      "Digestive aid",
+      "Heavy metal detox"
+    ],
+    "preparation_methods": [
+      "Seeds (ground or whole)",
+      "Fresh leaves"
+    ],
+    "precautions": "Generally safe. Can cause a minor allergic reaction in some individuals."
   },
   "fennel": {
-    "info": "Known for its digestive benefits and ability to reduce bloating. Fennel seeds are used in cooking and traditional remedies.",
+    "name": "Fennel",
     "scientific_name": "Foeniculum vulgare",
-    "image": "fennel.jpg",
-    "habitat": "Native to the Mediterranean region. Grows well in well-drained soil and full sun."
+    "habitat": "Native to the Mediterranean region. Grows well in well-drained soil and full sun.",
+    "description": "Known for its digestive benefits and ability to reduce bloating. Fennel seeds are used in cooking and traditional remedies.",
+    "image_url": "fennel.jpg",
+    "medicinal_uses": [
+      "Digestive aid",
+      "Bloating relief",
+      "Lactation support"
+    ],
+    "preparation_methods": [
+      "Tea (from seeds)",
+      "Fresh bulb for cooking"
+    ],
+    "precautions": "May interact with certain medications. High doses are not recommended for pregnant or breastfeeding women."
   },
   "jasmine": {
-    "info": "Used in aromatherapy for its calming effects and to reduce stress. Jasmine flowers are also used in perfumes and teas.",
+    "name": "Jasmine",
     "scientific_name": "Jasminum",
-    "image": "jasmine.jpg",
-    "habitat": "Native to tropical and subtropical regions. Prefers well-drained soil and full sun to partial shade."
+    "habitat": "Native to tropical and subtropical regions. Prefers well-drained soil and full sun to partial shade.",
+    "description": "Used in aromatherapy for its calming effects and to reduce stress. Jasmine flowers are also used in perfumes and teas.",
+    "image_url": "jasmine.jpg",
+    "medicinal_uses": [
+      "Stress relief",
+      "Relaxation",
+      "Anxiety reduction"
+    ],
+    "preparation_methods": [
+      "Tea",
+      "Essential oil"
+    ],
+    "precautions": "Generally safe. Pregnant women should consult a doctor before using jasmine oil."
   },
   "hibiscus": {
-    "info": "Rich in antioxidants and used to lower blood pressure. Hibiscus tea is a popular beverage known for its tart flavor.",
+    "name": "Hibiscus",
     "scientific_name": "Hibiscus sabdariffa",
-    "image": "hibiscus.jpg",
-    "habitat": "Native to tropical and subtropical regions. Thrives in warm climates with well-drained soil."
+    "habitat": "Native to tropical and subtropical regions. Thrives in warm climates with well-drained soil.",
+    "description": "Rich in antioxidants and used to lower blood pressure. Hibiscus tea is a popular beverage known for its tart flavor.",
+    "image_url": "hibiscus.jpg",
+    "medicinal_uses": [
+      "Lowering blood pressure",
+      "Antioxidant",
+      "Diuretic"
+    ],
+    "preparation_methods": [
+      "Tea",
+      "Powdered extract"
+    ],
+    "precautions": "Can significantly lower blood pressure. May interact with blood pressure medications."
   },
   "echinacea": {
-    "info": "Boosts the immune system and is used to prevent colds. Echinacea is often used in herbal supplements and teas.",
+    "name": "Echinacea",
     "scientific_name": "Echinacea purpurea",
-    "image": "echinacea.jpg",
-    "habitat": "Native to North America. Prefers well-drained soil and full sun."
+    "habitat": "Native to North America. Prefers well-drained soil and full sun.",
+    "description": "Boosts the immune system and is used to prevent colds. Echinacea is often used in herbal supplements and teas.",
+    "image_url": "echinacea.jpg",
+    "medicinal_uses": [
+      "Immune booster",
+      "Cold prevention",
+      "Anti-inflammatory"
+    ],
+    "preparation_methods": [
+      "Tea",
+      "Tincture",
+      "Capsules"
+    ],
+    "precautions": "People with autoimmune disorders should consult a doctor. Short-term use is recommended."
   },
   "banana": {
-    "info": "Rich in potassium and dietary fiber. Used as an energy source and for digestive health.",
+    "name": "Banana",
     "scientific_name": "Musa acuminata",
-    "image": "banana.jpg",
-    "habitat": "Native to Southeast Asia, now grown worldwide in tropical climates. Requires warm temperatures and moist, fertile soil."
+    "habitat": "Native to Southeast Asia, now grown worldwide in tropical climates. Requires warm temperatures and moist, fertile soil.",
+    "description": "Rich in potassium and dietary fiber. Used as an energy source and for digestive health.",
+    "image_url": "banana.jpg",
+    "medicinal_uses": [
+      "Digestive health",
+      "Energy source",
+      "Heart health (potassium)"
+    ],
+    "preparation_methods": [
+      "Eaten raw",
+      "Smoothies",
+      "Dried"
+    ],
+    "precautions": "People with a latex allergy may have a cross-reaction to bananas."
   },
   "bilimbi": {
-    "info": "Fruit is sour and used in traditional medicine to lower cholesterol and control hypertension.",
+    "name": "Bilimbi",
     "scientific_name": "Averrhoa bilimbi",
-    "image": "bilimbi.jpg",
-    "habitat": "Native to Southeast Asia. Prefers warm, humid climates and well-drained soil."
+    "habitat": "Native to Southeast Asia. Prefers warm, humid climates and well-drained soil.",
+    "description": "Fruit is sour and used in traditional medicine to lower cholesterol and control hypertension.",
+    "image_url": "bilimbi.jpg",
+    "medicinal_uses": [
+      "Lowering cholesterol",
+      "Hypertension control",
+      "Cough and cold remedy"
+    ],
+    "preparation_methods": [
+      "Juice",
+      "Syrup",
+      "Traditional remedies"
+    ],
+    "precautions": "High in oxalic acid, so consume in moderation, especially if you have kidney issues."
   },
   "cantaloupe": {
-    "info": "Rich in vitamin C and antioxidants. Helps with hydration and immune support.",
+    "name": "Cantaloupe",
     "scientific_name": "Cucumis melo",
-    "image": "cantaloupe.jpg",
-    "habitat": "Cultivated in warm regions worldwide. Prefers sandy loam soil and full sunlight."
+    "habitat": "Cultivated in warm regions worldwide. Prefers sandy loam soil and full sunlight.",
+    "description": "Rich in vitamin C and antioxidants. Helps with hydration and immune support.",
+    "image_url": "cantaloupe.jpg",
+    "medicinal_uses": [
+      "Hydration",
+      "Immune support",
+      "Antioxidant"
+    ],
+    "preparation_methods": [
+      "Eaten fresh",
+      "Juice",
+      "Salads"
+    ],
+    "precautions": "Generally safe. Wash the rind thoroughly before cutting to avoid bacterial contamination."
   },
   "cassava": {
-    "info": "Staple root crop rich in carbohydrates. Used to make flour, tapioca, and traditional foods.",
+    "name": "Cassava",
     "scientific_name": "Manihot esculenta",
-    "image": "cassava.jpg",
-    "habitat": "Native to South America, widely cultivated in tropical regions. Grows in poor, sandy soils."
+    "habitat": "Native to South America, widely cultivated in tropical regions. Grows in poor, sandy soils.",
+    "description": "Staple root crop rich in carbohydrates. Used to make flour, tapioca, and traditional foods.",
+    "image_url": "cassava.jpg",
+    "medicinal_uses": [
+      "Digestive aid (fiber)",
+      "Energy source"
+    ],
+    "preparation_methods": [
+      "Flour",
+      "Tapioca",
+      "Cooked root"
+    ],
+    "precautions": "Must be properly peeled and cooked to remove cyanide compounds. Never eat raw."
   },
   "coconut": {
-    "info": "Fruit provides water, milk, oil, and fiber. Used in food, cosmetics, and medicine.",
+    "name": "Coconut",
     "scientific_name": "Cocos nucifera",
-    "image": "coconut.jpg",
-    "habitat": "Tropical coastal regions worldwide. Requires sandy soil and high humidity."
+    "habitat": "Tropical coastal regions worldwide. Requires sandy soil and high humidity.",
+    "description": "Fruit provides water, milk, oil, and fiber. Used in food, cosmetics, and medicine.",
+    "image_url": "coconut.jpg",
+    "medicinal_uses": [
+      "Hydration (water)",
+      "Antimicrobial (oil)",
+      "Skin moisturizer"
+    ],
+    "preparation_methods": [
+      "Water (fresh)",
+      "Milk",
+      "Oil",
+      "Shredded meat"
+    ],
+    "precautions": "High in saturated fat, so consume oil in moderation."
   },
   "corn": {
-    "info": "Staple cereal crop rich in carbohydrates. Used as food, livestock feed, and biofuel.",
+    "name": "Corn",
     "scientific_name": "Zea mays",
-    "image": "corn.jpg",
-    "habitat": "Native to the Americas, cultivated globally. Grows well in warm climates and fertile soil."
+    "habitat": "Native to the Americas, cultivated globally. Grows well in warm climates and fertile soil.",
+    "description": "Staple cereal crop rich in carbohydrates. Used as food, livestock feed, and biofuel.",
+    "image_url": "corn.jpg",
+    "medicinal_uses": [
+      "Digestive health (fiber)",
+      "Energy source"
+    ],
+    "preparation_methods": [
+      "Cooked kernels",
+      "Flour",
+      "Oil"
+    ],
+    "precautions": "Generally safe. Can be difficult to digest for some people."
   },
   "cucumber": {
-    "info": "High in water content, promotes hydration and skin health. Commonly eaten fresh or pickled.",
+    "name": "Cucumber",
     "scientific_name": "Cucumis sativus",
-    "image": "cucumber.jpg",
-    "habitat": "Native to South Asia, cultivated worldwide. Prefers warm climates with moist soil."
+    "habitat": "Native to South Asia, cultivated worldwide. Prefers warm climates with moist soil.",
+    "description": "High in water content, promotes hydration and skin health. Commonly eaten fresh or pickled.",
+    "image_url": "cucumber.jpg",
+    "medicinal_uses": [
+      "Hydration",
+      "Skin soothing (topical)",
+      "Antioxidant"
+    ],
+    "preparation_methods": [
+      "Eaten fresh",
+      "Salads",
+      "Juice"
+    ],
+    "precautions": "Generally safe. People with a pollen-food allergy syndrome may have a reaction."
   },
   "curcuma": {
-    "info": "Includes turmeric species, used for anti-inflammatory and antioxidant purposes.",
+    "name": "Curcuma",
     "scientific_name": "Curcuma longa",
-    "image": "curcuma.jpg",
-    "habitat": "Native to tropical South Asia. Thrives in warm, humid regions with fertile soil."
+    "habitat": "Native to tropical South Asia. Thrives in warm, humid regions with fertile soil.",
+    "description": "Includes turmeric species, used for anti-inflammatory and antioxidant purposes.",
+    "image_url": "curcuma.jpg",
+    "medicinal_uses": [
+      "Anti-inflammatory",
+      "Antioxidant",
+      "Digestive aid"
+    ],
+    "preparation_methods": [
+      "Powder",
+      "Paste",
+      "Tea"
+    ],
+    "precautions": "Can act as a blood thinner. Avoid if you have gallbladder problems or are pregnant."
   },
   "eggplant": {
-    "info": "Rich in fiber, antioxidants, and vitamins. Used in various cuisines worldwide.",
+    "name": "Eggplant",
     "scientific_name": "Solanum melongena",
-    "image": "eggplant.jpg",
-    "habitat": "Native to Asia, cultivated globally. Prefers warm climates with well-drained soil."
+    "habitat": "Native to Asia, cultivated globally. Prefers warm climates with well-drained soil.",
+    "description": "Rich in fiber, antioxidants, and vitamins. Used in various cuisines worldwide.",
+    "image_url": "eggplant.jpg",
+    "medicinal_uses": [
+      "Digestive health (fiber)",
+      "Antioxidant"
+    ],
+    "preparation_methods": [
+      "Cooked",
+      "Roasted",
+      "Fried"
+    ],
+    "precautions": "People with nightshade sensitivity may have a reaction. Avoid eating raw."
   },
   "galangal": {
-    "info": "Used in Asian cuisine and traditional medicine. Believed to improve digestion and reduce inflammation.",
+    "name": "Galangal",
     "scientific_name": "Alpinia galanga",
-    "image": "galangal.jpg",
-    "habitat": "Native to Southeast Asia. Thrives in tropical climates with moist, fertile soil."
+    "habitat": "Native to Southeast Asia. Thrives in tropical climates with moist, fertile soil.",
+    "description": "Used in Asian cuisine and traditional medicine. Believed to improve digestion and reduce inflammation.",
+    "image_url": "galangal.jpg",
+    "medicinal_uses": [
+      "Digestive aid",
+      "Anti-inflammatory",
+      "Nausea relief"
+    ],
+    "preparation_methods": [
+      "Powder",
+      "Slices for cooking",
+      "Tea"
+    ],
+    "precautions": "Generally safe in culinary amounts. Medicinal doses should be discussed with a doctor."
   },
   "guava": {
-    "info": "Rich in vitamin C and antioxidants. Used to boost immunity and digestion.",
+    "name": "Guava",
     "scientific_name": "Psidium guajava",
-    "image": "guava.jpg",
-    "habitat": "Native to Central America, now cultivated in tropical regions worldwide. Grows in various soils."
+    "habitat": "Native to Central America, now cultivated in tropical regions worldwide. Grows in various soils.",
+    "description": "Rich in vitamin C and antioxidants. Used to boost immunity and digestion.",
+    "image_url": "guava.jpg",
+    "medicinal_uses": [
+      "Immune booster",
+      "Digestive health",
+      "Antioxidant"
+    ],
+    "preparation_methods": [
+      "Eaten fresh",
+      "Juice",
+      "Jelly"
+    ],
+    "precautions": "Eating too many guavas can cause bloating."
   },
   "kale": {
-    "info": "Leafy green vegetable high in vitamins A, C, and K. Known as a superfood.",
+    "name": "Kale",
     "scientific_name": "Brassica oleracea var. sabellica",
-    "image": "kale.jpg",
-    "habitat": "Native to the Mediterranean. Grows well in cool climates with moist, fertile soil."
+    "habitat": "Native to the Mediterranean. Grows well in cool climates with moist, fertile soil.",
+    "description": "Leafy green vegetable high in vitamins A, C, and K. Known as a superfood.",
+    "image_url": "kale.jpg",
+    "medicinal_uses": [
+      "Nutrient-rich",
+      "Antioxidant",
+      "Anti-inflammatory"
+    ],
+    "preparation_methods": [
+      "Salad",
+      "Smoothies",
+      "Steamed or sautéed"
+    ],
+    "precautions": "Can interfere with blood-thinning medications due to high Vitamin K content. People with thyroid issues should consume in moderation."
   },
   "longbeans": {
-    "info": "Rich in fiber and protein. Commonly used in Asian stir-fries and salads.",
+    "name": "Longbeans",
     "scientific_name": "Vigna unguiculata subsp. sesquipedalis",
-    "image": "longbeans.jpg",
-    "habitat": "Native to Africa, widely cultivated in Asia. Prefers warm climates with well-drained soil."
+    "habitat": "Native to Africa, widely cultivated in Asia. Prefers warm climates with well-drained soil.",
+    "description": "Rich in fiber and protein. Commonly used in Asian stir-fries and salads.",
+    "image_url": "longbeans.jpg",
+    "medicinal_uses": [
+      "Digestive health (fiber)",
+      "Protein source"
+    ],
+    "preparation_methods": [
+      "Cooked",
+      "Stir-fried",
+      "Blanched"
+    ],
+    "precautions": "Generally safe. Best to cook before consumption."
   },
   "mango": {
-    "info": "Tropical fruit rich in vitamins A and C. Known for its sweet flavor and health benefits.",
+    "name": "Mango",
     "scientific_name": "Mangifera indica",
-    "image": "mango.jpg",
-    "habitat": "Native to South Asia. Grows best in tropical and subtropical climates."
+    "habitat": "Native to South Asia. Grows best in tropical and subtropical climates.",
+    "description": "Tropical fruit rich in vitamins A and C. Known for its sweet flavor and health benefits.",
+    "image_url": "mango.jpg",
+    "medicinal_uses": [
+      "Immune booster",
+      "Skin health",
+      "Digestive aid (fiber)"
+    ],
+    "preparation_methods": [
+      "Eaten fresh",
+      "Juice",
+      "Smoothies"
+    ],
+    "precautions": "People with a poison ivy/oak/sumac allergy may have a cross-reaction to the mango peel."
   },
   "melon": {
-    "info": "Includes many varieties like honeydew and muskmelon. Hydrating and rich in vitamins.",
+    "name": "Melon",
     "scientific_name": "Cucumis melo",
-    "image": "melon.jpg",
-    "habitat": "Cultivated worldwide in warm climates. Requires well-drained soil and full sun."
+    "habitat": "Cultivated worldwide in warm climates. Requires well-drained soil and full sun.",
+    "description": "Includes many varieties like honeydew and muskmelon. Hydrating and rich in vitamins.",
+    "image_url": "melon.jpg",
+    "medicinal_uses": [
+      "Hydration",
+      "Vitamin-rich",
+      "Antioxidant"
+    ],
+    "preparation_methods": [
+      "Eaten fresh",
+      "Juice",
+      "Salads"
+    ],
+    "precautions": "Wash the rind thoroughly before cutting to avoid bacterial contamination."
   },
   "orange": {
-    "info": "Citrus fruit high in vitamin C. Boosts immunity and is used in juices, oils, and cosmetics.",
+    "name": "Orange",
     "scientific_name": "Citrus sinensis",
-    "image": "orange.jpg",
-    "habitat": "Native to Asia, cultivated worldwide in subtropical climates."
+    "habitat": "Native to Asia, cultivated worldwide in subtropical climates.",
+    "description": "Citrus fruit high in vitamin C. Boosts immunity and is used in juices, oils, and cosmetics.",
+    "image_url": "orange.jpg",
+    "medicinal_uses": [
+      "Immune booster",
+      "Antioxidant",
+      "Skin health"
+    ],
+    "preparation_methods": [
+      "Eaten fresh",
+      "Juice",
+      "Essential oil"
+    ],
+    "precautions": "High acidity may cause irritation for people with acid reflux."
   },
   "paddy": {
-    "info": "Rice plant, staple food for over half the world’s population.",
+    "name": "Paddy",
     "scientific_name": "Oryza sativa",
-    "image": "paddy.jpg",
-    "habitat": "Native to Asia, cultivated in flooded fields in tropical and subtropical regions."
+    "habitat": "Native to Asia, cultivated in flooded fields in tropical and subtropical regions.",
+    "description": "Rice plant, staple food for over half the world’s population.",
+    "image_url": "paddy.jpg",
+    "medicinal_uses": [
+      "Energy source",
+      "Digestive aid"
+    ],
+    "preparation_methods": [
+      "Boiled",
+      "Steamed"
+    ],
+    "precautions": "Excessive consumption of polished white rice can lead to blood sugar spikes."
   },
   "papaya": {
-    "info": "Rich in vitamin C and digestive enzyme papain. Helps with digestion and skin care.",
+    "name": "Papaya",
     "scientific_name": "Carica papaya",
-    "image": "papaya.jpg",
-    "habitat": "Native to the tropics of the Americas. Thrives in warm, humid regions."
+    "habitat": "Native to the tropics of the Americas. Thrives in warm, humid regions.",
+    "description": "Rich in vitamin C and digestive enzyme papain. Helps with digestion and skin care.",
+    "image_url": "papaya.jpg",
+    "medicinal_uses": [
+      "Digestive aid (papain)",
+      "Skin health",
+      "Immune booster"
+    ],
+    "preparation_methods": [
+      "Eaten fresh",
+      "Juice",
+      "Smoothies"
+    ],
+    "precautions": "Unripe papaya contains a latex that can trigger contractions. Avoid during pregnancy."
   },
   "pepper_chili": {
-    "info": "Rich in capsaicin, known for its spicy flavor and metabolic benefits.",
+    "name": "Chili Pepper",
     "scientific_name": "Capsicum annuum",
-    "image": "pepper_chili.jpg",
-    "habitat": "Native to the Americas, now cultivated globally. Prefers warm climates."
+    "habitat": "Native to the Americas, now cultivated globally. Prefers warm climates.",
+    "description": "Rich in capsaicin, known for its spicy flavor and metabolic benefits.",
+    "image_url": "pepper_chili.jpg",
+    "medicinal_uses": [
+      "Metabolic booster",
+      "Pain relief (capsaicin)",
+      "Antioxidant"
+    ],
+    "preparation_methods": [
+      "Fresh",
+      "Dried",
+      "Powder"
+    ],
+    "precautions": "Can cause digestive upset in some people. Avoid touching eyes after handling."
   },
   "pineapple": {
-    "info": "Tropical fruit rich in vitamin C and bromelain enzyme. Aids digestion and boosts immunity.",
+    "name": "Pineapple",
     "scientific_name": "Ananas comosus",
-    "image": "pineapple.jpg",
-    "habitat": "Native to South America, cultivated in tropical regions."
+    "habitat": "Native to South America, cultivated in tropical regions.",
+    "description": "Tropical fruit rich in vitamin C and bromelain enzyme. Aids digestion and boosts immunity.",
+    "image_url": "pineapple.jpg",
+    "medicinal_uses": [
+      "Digestive aid (bromelain)",
+      "Immune booster",
+      "Anti-inflammatory"
+    ],
+    "preparation_methods": [
+      "Eaten fresh",
+      "Juice",
+      "Smoothies"
+    ],
+    "precautions": "Can cause an allergic reaction. The bromelain can cause a tingling sensation in the mouth."
   },
   "pomelo": {
-    "info": "Largest citrus fruit, rich in vitamin C and antioxidants.",
+    "name": "Pomelo",
     "scientific_name": "Citrus maxima",
-    "image": "pomelo.jpg",
-    "habitat": "Native to Southeast Asia. Grows in tropical and subtropical climates."
+    "habitat": "Native to Southeast Asia. Grows in tropical and subtropical climates.",
+    "description": "Largest citrus fruit, rich in vitamin C and antioxidants.",
+    "image_url": "pomelo.jpg",
+    "medicinal_uses": [
+      "Immune booster",
+      "Antioxidant",
+      "Digestive health"
+    ],
+    "preparation_methods": [
+      "Eaten fresh"
+    ],
+    "precautions": "Can interact with certain medications, similar to grapefruit."
   },
   "shallot": {
-    "info": "Aromatic bulb with antioxidant and antibacterial properties. Used in cooking and medicine.",
+    "name": "Shallot",
     "scientific_name": "Allium cepa var. aggregatum",
-    "image": "shallot.jpg",
-    "habitat": "Native to Central or Southwest Asia, cultivated worldwide."
+    "habitat": "Native to Central or Southwest Asia, cultivated worldwide.",
+    "description": "Aromatic bulb with antioxidant and antibacterial properties. Used in cooking and medicine.",
+    "image_url": "shallot.jpg",
+    "medicinal_uses": [
+      "Antioxidant",
+      "Antibacterial",
+      "Heart health"
+    ],
+    "preparation_methods": [
+      "Cooked",
+      "Raw in salads"
+    ],
+    "precautions": "Generally safe. People with onion allergies should be cautious."
   },
   "soybeans": {
-    "info": "Rich in protein and used for soy products like tofu, soy milk, and soy sauce.",
+    "name": "Soybeans",
     "scientific_name": "Glycine max",
-    "image": "soybeans.jpg",
-    "habitat": "Native to East Asia, cultivated worldwide. Prefers warm climates."
+    "habitat": "Native to East Asia, cultivated worldwide. Prefers warm climates.",
+    "description": "Rich in protein and used for soy products like tofu, soy milk, and soy sauce.",
+    "image_url": "soybeans.jpg",
+    "medicinal_uses": [
+      "Protein source",
+      "Hormonal balance (isoflavones)",
+      "Heart health"
+    ],
+    "preparation_methods": [
+      "Tofu",
+      "Soy milk",
+      "Edamame"
+    ],
+    "precautions": "Can cause digestive issues in some people. Can affect thyroid function in large amounts."
   },
   "spinach": {
-    "info": "Leafy green vegetable rich in iron, vitamins, and antioxidants.",
+    "name": "Spinach",
     "scientific_name": "Spinacia oleracea",
-    "image": "spinach.jpg",
-    "habitat": "Native to Persia, cultivated globally. Prefers cool climates with moist, fertile soil."
+    "habitat": "Native to Persia, cultivated globally. Prefers cool climates with moist, fertile soil.",
+    "description": "Leafy green vegetable rich in iron, vitamins, and antioxidants.",
+    "image_url": "spinach.jpg",
+    "medicinal_uses": [
+      "Nutrient-rich (iron, vitamins)",
+      "Antioxidant"
+    ],
+    "preparation_methods": [
+      "Salad (raw)",
+      "Steamed or sautéed"
+    ],
+    "precautions": "High in oxalates, which can interfere with mineral absorption and contribute to kidney stones. People with kidney issues should consume in moderation."
   },
   "sweet_potatoes": {
-    "info": "Rich in fiber, vitamins, and antioxidants. Used as a staple food in many cultures.",
+    "name": "Sweet Potatoes",
     "scientific_name": "Ipomoea batatas",
-    "image": "sweet_potatoes.jpg",
-    "habitat": "Native to Central and South America. Grows in tropical and subtropical climates."
+    "habitat": "Native to Central and South America. Grows in tropical and subtropical climates.",
+    "description": "Rich in fiber, vitamins, and antioxidants. Used as a staple food in many cultures.",
+    "image_url": "sweet_potatoes.jpg",
+    "medicinal_uses": [
+      "Digestive health (fiber)",
+      "Antioxidant",
+      "Vitamin-rich (A, C)"
+    ],
+    "preparation_methods": [
+      "Roasted",
+      "Boiled",
+      "Mashed"
+    ],
+    "precautions": "Generally safe. Can cause bloating in some people."
   },
   "tobacco": {
-    "info": "Cultivated for its leaves, primarily used for smoking and nicotine extraction.",
+    "name": "Tobacco",
     "scientific_name": "Nicotiana tabacum",
-    "image": "tobacco.jpg",
-    "habitat": "Native to the Americas, cultivated worldwide in warm climates."
+    "habitat": "Native to the Americas, cultivated worldwide in warm climates.",
+    "description": "Cultivated for its leaves, primarily used for smoking and nicotine extraction.",
+    "image_url": "tobacco.jpg",
+    "medicinal_uses": [
+      "Nicotine extraction"
+    ],
+    "preparation_methods": [
+      "Dried leaves"
+    ],
+    "precautions": "Highly addictive and a major cause of cancer and heart disease. Not for medicinal use without medical supervision."
   },
   "waterapple": {
-    "info": "Tropical fruit with hydrating properties. Sweet and crunchy, used fresh or in salads.",
+    "name": "Waterapple",
     "scientific_name": "Syzygium aqueum",
-    "image": "waterapple.jpg",
-    "habitat": "Native to Southeast Asia. Grows in tropical, humid climates."
+    "habitat": "Native to Southeast Asia. Grows in tropical, humid climates.",
+    "description": "Tropical fruit with hydrating properties. Sweet and crunchy, used fresh or in salads.",
+    "image_url": "waterapple.jpg",
+    "medicinal_uses": [
+      "Hydration",
+      "Digestive aid (fiber)"
+    ],
+    "preparation_methods": [
+      "Eaten fresh",
+      "Salads"
+    ],
+    "precautions": "Generally safe."
   },
   "watermelon": {
-    "info": "Hydrating fruit rich in lycopene and vitamins. Promotes hydration and heart health.",
+    "name": "Watermelon",
     "scientific_name": "Citrullus lanatus",
-    "image": "watermelon.jpg",
-    "habitat": "Native to Africa, cultivated worldwide in warm climates."
+    "habitat": "Native to Africa, cultivated worldwide in warm climates.",
+    "description": "Hydrating fruit rich in lycopene and vitamins. Promotes hydration and heart health.",
+    "image_url": "watermelon.jpg",
+    "medicinal_uses": [
+      "Hydration",
+      "Heart health (lycopene)",
+      "Antioxidant"
+    ],
+    "preparation_methods": [
+      "Eaten fresh",
+      "Juice",
+      "Smoothies"
+    ],
+    "precautions": "Can cause digestive upset in some people due to high water and fructose content."
   }
 }
