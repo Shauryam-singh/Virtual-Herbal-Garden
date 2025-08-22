@@ -39,10 +39,7 @@ def search():
     results = {}
 
     for plant, info in plant_info.items():
-        normalized_name = plant.lower().replace("_", " ")
-        normalized_info = info.get('info', '').lower().replace("_", " ")
-
-        if query in normalized_name or query in normalized_info:
+        if plant.lower() == query:
             image_name = info.get('image', 'default.jpg')
             image_url = f"/plants/{image_name}"
 
