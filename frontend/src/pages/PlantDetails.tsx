@@ -1,9 +1,12 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { searchPlants } from "../api/api";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
+import { motion, AnimatePresence } from "framer-motion";
+import { FaGlobe, FaFlask, FaExclamationTriangle, FaMapMarkedAlt, FaChevronLeft, FaShareAlt, FaLeaf } from "react-icons/fa";
 
+// Interface remains the same
 interface Plant {
   name: string;
   scientific_name: string;
@@ -18,15 +21,16 @@ interface Plant {
 }
 
 const tabs = [
-  { key: "details", label: "Details" },
-  { key: "medicinal", label: "Medicinal Uses" },
-  { key: "preparation", label: "Preparation Methods" },
-  { key: "precautions", label: "Precautions" },
-  { key: "map", label: "Habitat Map" },
+  { key: "details", label: "Overview", icon: <FaLeaf /> },
+  { key: "medicinal", label: "Medicinal Uses", icon: <FaFlask /> },
+  { key: "preparation", label: "Preparation", icon: <FaGlobe /> },
+  { key: "precautions", label: "Safety", icon: <FaExclamationTriangle /> },
+  { key: "map", label: "Habitat Map", icon: <FaMapMarkedAlt /> },
 ];
 
 export default function PlantDetails() {
   const { id } = useParams<{ id: string }>();
+  const navigate = useNavigate();
   const [plant, setPlant] = useState<Plant | null>(null);
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState("details");
@@ -39,164 +43,154 @@ export default function PlantDetails() {
           const firstKey = Object.keys(data)[0];
           if (firstKey) setPlant(data[firstKey]);
         })
-        .catch((err) => console.error("Error fetching plant details:", err))
+        .catch((err) => console.error(err))
         .finally(() => setLoading(false));
     }
   }, [id]);
 
-  if (loading) {
-    return (
-      <div className="flex justify-center items-center min-h-screen">
-        <p className="animate-pulse text-green-600 text-lg">🌱 Loading plant details...</p>
+  if (loading) return (
+    <div className="min-h-screen flex flex-col items-center justify-center bg-slate-50">
+      <div className="relative">
+        <div className="w-20 h-20 border-4 border-green-100 border-t-green-600 rounded-full animate-spin"></div>
+        <FaLeaf className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-green-600 animate-pulse" />
       </div>
-    );
-  }
+      <p className="mt-4 font-bold text-slate-400 uppercase tracking-widest text-xs">Analyzing Species...</p>
+    </div>
+  );
 
-  if (!plant) {
-    return (
-      <p className="text-center text-gray-500 mt-20">
-        ❌ Plant not found. Try searching again.
-      </p>
-    );
-  }
+  if (!plant) return <div className="p-20 text-center">Plant not found.</div>;
 
   return (
-    <div className="min-h-screen bg-green-50 py-6 px-4 sm:px-6 flex flex-col items-center">
-      <div className="w-full max-w-6xl bg-white rounded-3xl shadow-lg overflow-hidden">
-        {/* Hero Section */}
-        <div className="flex flex-col md:flex-row">
-          <div className="flex-1">
-            <img
-              src={plant.image_url || "/placeholder-plant.jpg"}
-              alt={plant.name}
-              className="h-64 sm:h-80 md:h-full w-full object-cover"
-              onError={(e) => {
-                (e.target as HTMLImageElement).src = "/placeholder-plant.jpg";
-              }}
-            />
-          </div>
-
-          <div className="flex-1 p-6 sm:p-8">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-800 mb-4">
-              {plant.name}
-            </h1>
-            <p className="text-gray-700 text-base sm:text-lg mb-4">
-              {plant.description || "No description available."}
-            </p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm sm:text-base">
-              <p>
-                <strong className="text-green-700">Scientific Name:</strong>{" "}
-                <span className="italic">{plant.scientific_name || "N/A"}</span>
-              </p>
-              <p>
-                <strong className="text-green-700">Habitat:</strong>{" "}
-                {plant.habitat || "Unknown"}
-              </p>
-            </div>
-
-            <div className="mt-6 flex flex-wrap gap-3">
-              <button
-                onClick={() => {
-                  navigator.clipboard.writeText(window.location.href);
-                  alert("✅ Link copied to clipboard!");
-                }}
-                className="bg-gray-100 hover:bg-gray-200 text-gray-800 px-4 py-2 rounded-lg font-semibold shadow text-sm sm:text-base"
-              >
-                🔗 Share
-              </button>
-            </div>
-          </div>
-        </div>
-
-        {/* Tabs */}
-        <div className="border-t px-4 sm:px-6 py-4">
-          <div
-            className="flex flex-wrap gap-4 border-b mb-6"
-            role="tablist"
-            aria-label="Plant details tabs"
+    <div className="min-h-screen bg-slate-50 pb-20">
+      {/* Top Navigation Bar */}
+      <div className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-40 border-b border-slate-100 px-6 py-4">
+        <div className="max-w-7xl mx-auto flex justify-between items-center">
+          <button onClick={() => navigate(-1)} className="flex items-center gap-2 text-slate-600 hover:text-green-600 font-bold transition-colors">
+            <FaChevronLeft /> Back to Explorer
+          </button>
+          <button 
+            onClick={() => { navigator.clipboard.writeText(window.location.href); alert("Link Copied!"); }}
+            className="p-2 bg-slate-100 rounded-full hover:bg-green-100 hover:text-green-600 transition-all"
           >
-            {tabs.map((tab) => (
-              <button
-                key={tab.key}
-                role="tab"
-                aria-selected={activeTab === tab.key}
-                className={`pb-2 text-base sm:text-lg font-semibold ${
-                  activeTab === tab.key
-                    ? "text-green-700 border-b-2 border-green-700"
-                    : "text-gray-500 hover:text-green-600"
-                }`}
-                onClick={() => setActiveTab(tab.key)}
-              >
-                {tab.label}
-              </button>
-            ))}
+            <FaShareAlt />
+          </button>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 md:px-8 pt-32">
+        <div className="grid lg:grid-cols-12 gap-12">
+          
+          {/* Left Column: Image & Stats Sidebar */}
+          <div className="lg:col-span-4 space-y-6">
+            <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} className="sticky top-32">
+              <div className="rounded-[2.5rem] overflow-hidden shadow-2xl shadow-slate-200 border-8 border-white">
+                <img src={plant.image_url} alt={plant.name} className="w-full aspect-square object-cover" />
+              </div>
+              
+              <div className="mt-8 bg-white p-8 rounded-[2rem] shadow-xl shadow-slate-200/50 space-y-6">
+                <div>
+                  <label className="text-[10px] font-black uppercase text-slate-400 tracking-widest">Scientific Classification</label>
+                  <p className="text-lg font-bold italic text-green-700">{plant.scientific_name}</p>
+                </div>
+                <div className="h-px bg-slate-100" />
+                <div>
+                  <label className="text-[10px] font-black uppercase text-slate-400 tracking-widest">Primary Habitat</label>
+                  <p className="text-lg font-bold text-slate-800">{plant.habitat}</p>
+                </div>
+              </div>
+            </motion.div>
           </div>
 
-          {/* Tab Content */}
-          <div className="mb-6 text-gray-700 text-sm sm:text-base">
-            {activeTab === "details" && (
-              <p>{plant.description || "No details available."}</p>
-            )}
-
-            {activeTab === "medicinal" && (
-              plant.medicinal_uses?.length ? (
-                <ul className="list-disc list-inside space-y-2">
-                  {plant.medicinal_uses.map((use, idx) => (
-                    <li key={idx}>{use}</li>
-                  ))}
-                </ul>
-              ) : (
-                <p>No medicinal uses available.</p>
-              )
-            )}
-
-            {activeTab === "preparation" && (
-              plant.preparation_methods?.length ? (
-                <ul className="list-disc list-inside space-y-2">
-                  {plant.preparation_methods.map((method, idx) => (
-                    <li key={idx}>{method}</li>
-                  ))}
-                </ul>
-              ) : (
-                <p>No preparation methods available.</p>
-              )
-            )}
-
-            {activeTab === "precautions" && (
-              <p>{plant.precautions || "No precautions listed."}</p>
-            )}
-
-            {activeTab === "map" && plant.locations?.length ? (
-              <div className="h-96 w-full rounded-lg overflow-hidden shadow">
-                <MapContainer
-                  center={[plant.locations[0].lat, plant.locations[0].lng]}
-                  zoom={3}
-                  style={{ height: "100%", width: "100%" }}
-                >
-                  <TileLayer
-                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                    attribution="&copy; OpenStreetMap contributors"
-                  />
-                  {plant.locations.map((loc, idx) => (
-                    <Marker
-                      key={idx}
-                      position={[loc.lat, loc.lng]}
-                      icon={L.icon({
-                        iconUrl:
-                          "https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png",
-                        iconSize: [25, 41],
-                        iconAnchor: [12, 41],
-                      })}
-                    >
-                      <Popup>{loc.label || "Habitat Area"}</Popup>
-                    </Marker>
-                  ))}
-                </MapContainer>
+          {/* Right Column: Content */}
+          <div className="lg:col-span-8">
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+              <h1 className="text-5xl md:text-7xl font-black text-slate-900 mb-6 tracking-tight leading-none">
+                {plant.name}
+              </h1>
+              
+              {/* Modern Tab Switcher */}
+              <div className="flex-wrap gap-2 mb-10 bg-slate-100 p-1.5 rounded-2xl inline-flex">
+                {tabs.map((tab) => (
+                  <button
+                    key={tab.key}
+                    onClick={() => setActiveTab(tab.key)}
+                    className={`flex items-center gap-2 px-6 py-3 rounded-xl font-bold transition-all text-sm ${
+                      activeTab === tab.key 
+                        ? "bg-white text-green-600 shadow-sm" 
+                        : "text-slate-500 hover:text-slate-700"
+                    }`}
+                  >
+                    {tab.icon} {tab.label}
+                  </button>
+                ))}
               </div>
-            ) : (
-              activeTab === "map" && <p>No habitat data available.</p>
-            )}
+
+              {/* Animated Tab Content */}
+              <div className="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-xl shadow-slate-200/50 min-h-[400px]">
+                <AnimatePresence mode="wait">
+                  <motion.div
+                    key={activeTab}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    className="text-slate-600 text-lg leading-relaxed"
+                  >
+                    {activeTab === "details" && (
+                      <div className="space-y-6">
+                        <h2 className="text-2xl font-bold text-slate-900 italic">"The Botanical Essence"</h2>
+                        <p>{plant.description}</p>
+                      </div>
+                    )}
+
+                    {activeTab === "medicinal" && (
+                      <ul className="grid md:grid-cols-2 gap-4">
+                        {plant.medicinal_uses?.map((use, idx) => (
+                          <li key={idx} className="flex gap-4 p-4 bg-green-50 rounded-2xl items-start">
+                            <span className="w-8 h-8 rounded-full bg-green-200 flex items-center justify-center text-green-700 font-bold text-xs flex-shrink-0">{idx + 1}</span>
+                            <span className="font-medium text-slate-800">{use}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+
+                    {activeTab === "preparation" && (
+                      <div className="space-y-6">
+                        {plant.preparation_methods?.map((method, idx) => (
+                          <div key={idx} className="border-l-4 border-green-500 pl-6 py-2 bg-slate-50 rounded-r-2xl">
+                             <p className="font-bold text-slate-800">{method}</p>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+
+                    {activeTab === "precautions" && (
+                      <div className="bg-amber-50 border-2 border-amber-100 p-8 rounded-3xl flex gap-6">
+                        <FaExclamationTriangle className="text-amber-500 text-4xl flex-shrink-0" />
+                        <p className="text-amber-900 font-medium">{plant.precautions}</p>
+                      </div>
+                    )}
+
+                    {activeTab === "map" && (
+                      <div className="h-[450px] w-full rounded-[2rem] overflow-hidden border-4 border-slate-50 shadow-inner">
+                        {plant.locations?.length ? (
+                          <MapContainer center={[plant.locations[0].lat, plant.locations[0].lng]} zoom={4} style={{ height: "100%" }}>
+                            <TileLayer url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png" />
+                            {plant.locations.map((loc, idx) => (
+                              <Marker key={idx} position={[loc.lat, loc.lng]} icon={L.icon({
+                                iconUrl: "https://cdn-icons-png.flaticon.com/512/684/684908.png",
+                                iconSize: [30, 30],
+                              })}>
+                                <Popup><span className="font-bold text-green-700">{loc.label}</span></Popup>
+                              </Marker>
+                            ))}
+                          </MapContainer>
+                        ) : <p className="text-center p-20">No habitat mapping found.</p>}
+                      </div>
+                    )}
+                  </motion.div>
+                </AnimatePresence>
+              </div>
+            </motion.div>
           </div>
         </div>
       </div>
