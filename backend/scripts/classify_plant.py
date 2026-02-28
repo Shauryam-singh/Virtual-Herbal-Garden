@@ -5,7 +5,7 @@ from skimage.feature import hog
 from skimage import color
 import io
 
-plant_classifier = joblib.load('models/plant_recognition_rf_model.pkl')
+plant_classifier = joblib.load('models/plant_model_compressed.pkl')
 
 def extract_features_from_bytes(file_bytes):
     image = cv2.imdecode(np.frombuffer(file_bytes, np.uint8), cv2.IMREAD_COLOR)
