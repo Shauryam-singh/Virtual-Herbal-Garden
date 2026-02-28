@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState, useEffect, useRef } from "react"; // Added useRef
 import PlantCard from "../components/PlantCard";
 import { searchPlants, uploadPlantImage } from "../api/api";
@@ -6,11 +7,11 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function Garden() {
   const [query, setQuery] = useState("");
-  const [plants, setPlants] = useState([]);
-  const [file, setFile] = useState(null);
-  const [preview, setPreview] = useState(null);
+  const [plants, setPlants] = useState<any[]>([]);
+  const [file, setFile] = useState<File | null>(null);
+  const [preview, setPreview] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
-  const [popularPlants, setPopularPlants] = useState([]);
+  const [popularPlants, setPopularPlants] = useState<any[]>([]);
 
   // Create a reference for the results section
   const resultsRef = useRef<HTMLDivElement>(null);
@@ -24,7 +25,7 @@ export default function Garden() {
     const fetchPopularPlants = async () => {
       try {
         const res = await searchPlants("");
-        const data = Object.entries(res.data).map(([name, info]) => ({ name, ...info }));
+        const data = Object.entries(res.data).map(([name, info]: [string, any]) => ({ name, ...info }));
         setPopularPlants(data.slice(0, 4));
       } catch (err) {
         console.error(err);
@@ -33,7 +34,7 @@ export default function Garden() {
     fetchPopularPlants();
   }, []);
 
-  const onFileChange = (e) => {
+  const onFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = e.target.files?.[0];
     if (selectedFile) {
       setFile(selectedFile);
@@ -46,7 +47,7 @@ export default function Garden() {
     setLoading(true);
     try {
       const res = await searchPlants(query);
-      const data = Object.entries(res.data).map(([name, info]) => ({ name, ...info }));
+      const data = Object.entries(res.data).map(([name, info]: [string, any]) => ({ name, ...info }));
       setPlants(data);
       // Scroll down after results are set
       setTimeout(scrollToResults, 100); 

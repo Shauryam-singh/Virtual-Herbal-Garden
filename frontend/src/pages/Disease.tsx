@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState, useRef } from "react";
 import { diseaseUpload } from "../api/api";
 import axios from "axios";
@@ -31,7 +32,7 @@ export default function Disease() {
   const cropResultsRef = useRef<HTMLDivElement>(null);
 
   // Helper: Smooth Scroll
-  const scrollToRef = (ref: React.RefObject<HTMLDivElement>) => {
+  const scrollToRef = (ref: React.RefObject<HTMLDivElement | null>) => {
     setTimeout(() => {
       ref.current?.scrollIntoView({ behavior: "smooth", block: "start" });
     }, 150);
